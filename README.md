@@ -8,14 +8,27 @@ Predicts at-risk secondary school students across four structured phases of the 
 
 ---
 
+## Live demo
+
+**Deployed app:** [https://go-academics.onrender.com](https://go-academics.onrender.com)
+(Free-tier hosting — the first request after a period of inactivity can take 30–60s to wake up.)
+
+**Demo video:** _link here_
+
+---
+
 ## What it does
 
 | Phase | Weeks | Method | Trigger |
 |-------|-------|--------|---------|
 | 1 | 1–3 | Rule-based | Attendance < 80% |
 | 2 | 4–6 | Rule-based | Attendance < 80% **or** CA < 15/30 |
-| 3 | 7–9 | XGBoost ML | Risk score ≥ 0.35 |
-| 4 | 10–12 | XGBoost ML | Risk score ≥ 0.35 + intervention recommendation |
+| 3 | 7–9 | ML (best of Logistic Regression / Random Forest / XGBoost, picked by recall — see `/model-info`) | Risk score ≥ medium threshold |
+| 4 | 10–12 | Same ML model | Risk score ≥ high threshold + intervention recommendation |
+
+Exact thresholds are derived from the precision-recall curve at training time (not
+hardcoded) — check `backend/app/ml/saved_models/model_meta.json` or `GET /model-info`
+on the running app for the current values.
 
 ---
 
@@ -79,24 +92,46 @@ the actual trained model, not fabricated.
 
 ## Running the system
 
-### Start the backend API
+The FastAPI backend serves the dashboard's static HTML directly (see
+`backend/app/main.py`), so there's only one server to run — no separate
+frontend host, no cross-origin requests.
 
 ```bash
 cd backend
 python -m uvicorn app.main:app --port 8000 --reload
 ```
 
-API is now live at `http://localhost:8000`
-Interactive docs: `http://localhost:8000/docs`
+On first startup, if the database is empty, it auto-seeds all 78 real
+Excella students (see `_seed_if_empty()` in `main.py`) — no manual seed
+step needed.
 
-### Open the dashboard
-
-Open this file in your browser:
+Open your browser to:
 ```
-dashboard/Go Academics.html
+http://localhost:8000/
 ```
 
-The live prediction widget appears in the bottom-right corner. A green dot confirms the API is connected.
+Interactive API docs: `http://localhost:8000/docs`
+
+The live prediction widget appears in the bottom-right corner of the dashboard. A green dot confirms the API is connected.
+
+---
+
+## Deployment
+
+Deployed as a single [Render](https://render.com) Web Service — one repo, one
+build, one URL:
+
+| Setting | Value |
+|---|---|
+| Root Directory | `backend` |
+| Build Command | `pip install -r requirements.txt` |
+| Start Command | `uvicorn app.main:app --host 0.0.0.0 --port $PORT` |
+| Instance Type | Free |
+
+Render clones the whole repo regardless of Root Directory, so the dashboard
+(`dashboard/`) and data (`data/`) folders are available to the backend at
+runtime via relative paths from `main.py`. No environment variables are
+required — the app has no API keys or external secrets.
 
 ---
 
@@ -106,7 +141,7 @@ The live prediction widget appears in the bottom-right corner. A green dot confi
 Go_Academics/
 ├── backend/
 │   ├── app/
-│   │   ├── main.py              # FastAPI entrypoint
+│   │   ├── main.py              # FastAPI entrypoint — also mounts dashboard/ as static files
 │   │   ├── db.py                # SQLite session factory
 │   │   ├── models/database.py   # SQLAlchemy models
 │   │   ├── ml/
@@ -115,7 +150,8 @@ Go_Academics/
 │   │   │   └── saved_models/    # best_model.pkl + model_meta.json
 │   │   ├── routes/
 │   │   │   ├── predict.py       # POST /predict (phase-aware)
-│   │   │   └── students.py      # GET/POST /students
+│   │   │   ├── students.py      # GET/POST /students
+│   │   │   └── model_info.py    # GET /model-info (live model identity + metrics)
 │   │   └── data/phase_logic.py  # Four-phase rule engine
 │   └── requirements.txt
 ├── data/
@@ -123,9 +159,9 @@ Go_Academics/
 │   ├── processed/               # Preprocessed CSVs + encodings.json
 │   ├── preprocess.py            # Real data → Go Academics pipeline (active)
 │   ├── preprocess_plan_b.py     # UCI fallback pipeline (inactive)
-│   └── seed.py                  # Demo database seed
+│   └── seed.py                  # Seeds all 78 real students with model-predicted risk scores
 ├── dashboard/
-│   └── Go Academics.html        # Teacher dashboard (offline-capable)
+│   └── index.html               # Teacher dashboard (served by the backend, offline-capable)
 ├── docs/
 │   └── ML_Track_Notebook.ipynb  # ML demo notebook (Initial Software Demo)
 └── CLAUDE.md                    # Project memory and conventions
@@ -143,6 +179,8 @@ Go_Academics/
 | POST | `/students` | Add a student |
 | GET | `/students/{code}` | Student detail + latest risk |
 | POST | `/students/{code}/assessment` | Record CA score + attendance |
+| DELETE | `/students/{code}` | Delete a student and their records |
+| GET | `/model-info` | Currently deployed model's identity + live metrics |
 
 ---
 
@@ -162,7 +200,8 @@ Go_Academics/
 
 ## Tech stack
 
-- **Backend**: FastAPI + SQLAlchemy + SQLite
-- **ML**: scikit-learn · XGBoost · imbalanced-learn (SMOTE)
-- **Frontend**: React (Claude Design export) — runs fully offline
+- **Backend**: FastAPI + SQLAlchemy + SQLite, served with Uvicorn
+- **ML**: scikit-learn (Logistic Regression / Random Forest) · XGBoost · imbalanced-learn (SMOTE)
+- **Frontend**: plain HTML/CSS/JavaScript, no build step — served directly by the FastAPI backend, runs fully offline
 - **Data**: real anonymized Kigali school records (Plan A); UCI Student Performance Dataset kept as an inactive Plan B fallback
+- **Deployment**: Render (single Web Service, free tier)
