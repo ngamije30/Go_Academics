@@ -1,7 +1,12 @@
 """
 Go Academics — FastAPI entrypoint.
 
+Serves the dashboard's static HTML at "/" and the API alongside it, so the
+whole app deploys as a single service behind one URL — no separate frontend
+host, no cross-origin requests.
+
 Routes:
+  GET  /                                  — teacher dashboard (dashboard/index.html)
   GET  /health
   POST /predict                           — phase-aware risk assessment
   GET  /students                          — list students
@@ -16,10 +21,13 @@ from pathlib import Path
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 
 from app.db import init_db, SessionLocal
 from app.models.database import Student
 from app.routes import model_info, predict, students
+
+DASHBOARD_DIR = Path(__file__).parent.parent.parent / "dashboard"
 
 
 def _seed_if_empty() -> None:
@@ -71,3 +79,8 @@ app.include_router(model_info.router, tags=["model"])
 @app.get("/health")
 def health_check():
     return {"status": "ok", "service": "go-academics-api", "version": "0.2.0"}
+
+
+# Mounted last: a mount at "/" would otherwise shadow the API routes above,
+# since Starlette matches routes in registration order.
+app.mount("/", StaticFiles(directory=str(DASHBOARD_DIR), html=True), name="dashboard")

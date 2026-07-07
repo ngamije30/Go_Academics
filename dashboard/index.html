@@ -1006,7 +1006,10 @@ function skipIntro(raf,msgTimer){
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-const API = 'http://localhost:8000';
+// Relative — the dashboard is served by the same FastAPI app as the API
+// (see backend/app/main.py), so this always resolves to the current origin
+// whether running locally or deployed.
+const API = '';
 let allStudents = [];
 let alertFilter = 'all';
 let currentTab  = 'attendance';
