@@ -1,0 +1,77 @@
+{
+  "best_model": "Logistic Regression",
+  "n_samples": 212,
+  "feature_cols": [
+    "School",
+    "Gender",
+    "Stream",
+    "Term",
+    "Subject",
+    "CA_Score",
+    "CA_Trend",
+    "Attendance_Pct"
+  ],
+  "encodings": {
+    "School": {
+      "School A": 0
+    },
+    "Gender": {
+      "Female": 0,
+      "Male": 1
+    },
+    "Stream": {
+      "Grade 10": 0
+    },
+    "Subject": {
+      "English": 0,
+      "French": 1
+    }
+  },
+  "shap_compatible": false,
+  "thresholds": {
+    "medium": 0.768,
+    "high": 0.918
+  },
+  "metrics": {
+    "model": "Logistic Regression",
+    "accuracy": 95.35,
+    "recall": 90.48,
+    "precision": 100.0,
+    "f1": 95.0,
+    "auc_roc": 99.78,
+    "cv_recall_mean": 95.28,
+    "cv_recall_std": 3.01
+  },
+  "all_results": [
+    {
+      "model": "Logistic Regression",
+      "accuracy": 95.35,
+      "recall": 90.48,
+      "precision": 100.0,
+      "f1": 95.0,
+      "auc_roc": 99.78,
+      "cv_recall_mean": 95.28,
+      "cv_recall_std": 3.01
+    },
+    {
+      "model": "Random Forest",
+      "accuracy": 95.35,
+      "recall": 90.48,
+      "precision": 100.0,
+      "f1": 95.0,
+      "auc_roc": 99.13,
+      "cv_recall_mean": 98.14,
+      "cv_recall_std": 2.28
+    },
+    {
+      "model": "XGBoost",
+      "accuracy": 95.35,
+      "recall": 90.48,
+      "precision": 100.0,
+      "f1": 95.0,
+      "auc_roc": 98.05,
+      "cv_recall_mean": 94.37,
+      "cv_recall_std": 3.47
+    }
+  ]
+}

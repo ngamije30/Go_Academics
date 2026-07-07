@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.env
+
+# ML artifacts — best_model.pkl IS committed (a few KB, needed for deployment
+# to work without a training step); only ignore accidental large exports.
+backend/app/ml/saved_models/*.joblib
+
+# Generated demo database — regenerated automatically on startup (see
+# app/main.py::_seed_if_empty) or via `python data/seed.py`
+data/*.db
+data/*.db-shm
+data/*.db-wal
+
+# OS/editor
+.DS_Store
+.vscode/
+*.log
+
+# Node (if dashboard ends up being React)
+node_modules/
+dashboard/build/
