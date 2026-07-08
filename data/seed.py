@@ -94,7 +94,16 @@ def seed():
         by_student = _load_real_students()
         prediction_phase = phase_map[3]  # full CA + attendance data == Phase 3 (ML prediction)
 
-        for code, subject_rows in by_student.items():
+        for i, (code, subject_rows) in enumerate(by_student.items()):
+            # The dashboard shows each student's *last-inserted* assessment as
+            # "current" (mirroring how a live system treats the most recent
+            # submission). The raw CSV always lists English before French for
+            # every student, so without this, French would always win and
+            # English would never appear in the summary view. Alternate the
+            # insertion order so both subjects are fairly represented.
+            if i % 2 == 1:
+                subject_rows = list(reversed(subject_rows))
+
             first = subject_rows[0]
             student = Student(
                 student_code=code,
