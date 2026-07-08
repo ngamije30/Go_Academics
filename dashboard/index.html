@@ -167,6 +167,9 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Inter',sans-serif;background:
 #content{margin-left:220px;padding-top:60px;min-height:100vh}
 .page{display:none;padding:28px 32px}
 .page.active{display:block;animation:fadeUp .3s cubic-bezier(.22,.68,0,1.1) both}
+#sidebar-toggle{display:none}
+#sidebar-backdrop{display:none;position:fixed;inset:0;background:rgba(15,23,42,.4);z-index:99}
+#sidebar-backdrop.visible{display:block}
 
 /* ── SHARED ──────────────────────────────────────────────────────────────── */
 .card{background:var(--white);border:1px solid var(--border);border-radius:12px;overflow:hidden}
@@ -184,6 +187,8 @@ h1{font-size:20px;font-weight:700;color:var(--navy);margin-bottom:4px}
 @keyframes spin{to{transform:rotate(360deg)}}
 .loading-row{padding:40px;text-align:center;color:var(--slate);font-size:13px}
 .empty-state{padding:48px;text-align:center;color:var(--slate);font-size:13px}
+#dash-table-body,#students-table-body{overflow-x:auto}
+#dash-table-body table,#students-table-body table{min-width:640px}
 table{width:100%;border-collapse:collapse}
 th{text-align:left;font-size:11px;font-weight:600;color:var(--slate);text-transform:uppercase;letter-spacing:.4px;padding:10px 20px;background:var(--bg);border-bottom:1px solid var(--border)}
 td{padding:14px 20px;font-size:13px;border-bottom:1px solid var(--border);vertical-align:middle}
@@ -417,6 +422,29 @@ input:focus,select:focus{border-color:var(--navy)}
 /* Intro exit animation */
 @keyframes introOut{to{opacity:0;transform:scale(1.04)}}
 .intro-exit{animation:introOut .5s cubic-bezier(.55,.05,.67,.19) forwards!important}
+
+/* ── MOBILE (phones/small tablets) ──────────────────────────────────────── */
+@media (max-width:768px){
+  #sidebar-toggle{display:flex}
+  #sidebar{transform:translateX(-100%);transition:transform .25s ease;z-index:200;width:240px}
+  #sidebar.mobile-open{transform:translateX(0);box-shadow:0 0 32px rgba(0,0,0,.25)}
+  #topbar{left:0;padding:0 14px}
+  .topbar-right{gap:8px}
+  .sync-badge span:not(.sync-dot){display:none}  /* keep the dot, hide the long label */
+  .user-info{display:none}                        /* name/school — recoverable via Settings */
+  #content{margin-left:0;padding-top:60px}
+  .page{padding:16px}
+  .kpi-row{grid-template-columns:repeat(2,1fr);gap:12px}
+  .detail-grid{grid-template-columns:1fr}
+  .data-entry-grid{grid-template-columns:1fr}
+  .form-grid{grid-template-columns:1fr}
+  .footer-cards{grid-template-columns:1fr}
+  #live-widget{left:12px;right:12px;bottom:12px;width:auto}
+  .search-wrap input{width:150px}
+}
+@media (max-width:480px){
+  .kpi-row{grid-template-columns:1fr}
+}
 </style>
 </head>
 <body>
@@ -543,10 +571,14 @@ input:focus,select:focus{border-color:var(--navy)}
       </button>
     </div>
   </nav>
+  <div id="sidebar-backdrop" onclick="toggleSidebar()"></div>
 
   <!-- Topbar -->
   <header id="topbar">
     <div class="topbar-logo">
+      <button type="button" id="sidebar-toggle" class="icon-btn" onclick="toggleSidebar()" title="Menu" aria-label="Toggle menu">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
         <path d="M21.42 10.92a1 1 0 0 0 0-1.84L12.83 5.18a2 2 0 0 0-1.66 0L2.58 9.08a1 1 0 0 0 0 1.84l8.59 3.9a2 2 0 0 0 1.66 0z"/>
         <path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/>
@@ -1154,6 +1186,14 @@ function nav(page) {
     loadAll(); // always refresh from API when opening alerts
   }
   if(page==='data-entry') renderRecentEntries();
+  document.getElementById('sidebar').classList.remove('mobile-open');
+  document.getElementById('sidebar-backdrop').classList.remove('visible');
+}
+
+// ── MOBILE MENU ───────────────────────────────────────────────────────────────
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('mobile-open');
+  document.getElementById('sidebar-backdrop').classList.toggle('visible');
 }
 
 // ── LOAD DATA ────────────────────────────────────────────────────────────────
