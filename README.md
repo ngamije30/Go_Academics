@@ -13,7 +13,7 @@ Predicts at-risk secondary school students across four structured phases of the 
 **Deployed app:** [https://go-academics.onrender.com](https://go-academics.onrender.com)
 (Free-tier hosting — the first request after a period of inactivity can take 30–60s to wake up.)
 
-**Demo video:** _link here_
+**Demo video:** https://www.loom.com/share/8869897bd33f4d6ba2e9475211e1fecb
 
 > **Note:** this live demo runs on Render (cloud) for presentation convenience, which
 > requires an internet connection to reach. In its intended production setting, Go
