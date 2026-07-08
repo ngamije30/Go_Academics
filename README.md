@@ -210,3 +210,31 @@ Go_Academics/
 - **Frontend**: plain HTML/CSS/JavaScript, no build step — served directly by the FastAPI backend, runs fully offline
 - **Data**: real anonymized Kigali school records (Plan A); UCI Student Performance Dataset kept as an inactive Plan B fallback
 - **Deployment**: Render (single Web Service, free tier)
+
+---
+
+## Testing results
+
+All screenshots below are from the live deployed app at `go-academics.onrender.com`, not localhost.
+
+### Testing strategies
+
+| | |
+|---|---|
+| ![pytest suite](docs/screenshots/02_pytest_suite.png) **Automated tests** — 21 tests passing (unit + integration, covering rule-based phases, ML phases, CRUD, and validation) | ![Swagger request](docs/screenshots/03_swagger_predict_request.png) **API contract testing** — `POST /predict` via the interactive `/docs` UI |
+| ![Swagger 200 response](docs/screenshots/04_swagger_predict_200.png) **Live API response** — real request against the deployed model, returning `Low Risk` for a Phase 1 (rule-based) input | ![Dashboard](docs/screenshots/01_dashboard_overview.png) **Manual UI testing** — dashboard loaded against the live API, showing all 78 real students |
+
+### Different data values
+
+| | |
+|---|---|
+| ![High risk student](docs/screenshots/06_student_high_risk.png) **High-risk student** (S003) — 99% risk score with model explanation: low CA score, subject, and gender ranked by contribution | ![Low risk student](docs/screenshots/07_student_low_risk.png) **Low-risk student** (S001) — 0% risk score, same model, different real inputs |
+| ![Live risk alert](docs/screenshots/08_data_entry_live_alert.png) **Live prediction on submit** — a new assessment (S014) triggers an immediate risk alert computed by the real trained model, not canned data | ![Validation rejected](docs/screenshots/09_data_entry_validation_error.png) **Invalid input rejected** — out-of-range values (150% attendance, -11 days absent) are rejected rather than silently accepted |
+
+### Performance across hardware/software
+
+| | |
+|---|---|
+| ![Edge browser](docs/screenshots/10_different_browser_edge.png) **Different browser** — Microsoft Edge (development/testing was primarily done in Chrome) | ![Mobile phone](docs/screenshots/11_mobile_phone.jpeg) **Different device** — live URL open on an actual phone, after adding a responsive layout (collapsible nav, stacked grids, scrollable tables) |
+
+**Note on the validation-error screenshot:** the frontend currently surfaces the raw error object (`[object Object]`) instead of a formatted message when the backend rejects a request — the *rejection itself* works correctly (bad data is never accepted), but the error display is a known cosmetic issue, not a functional one.
