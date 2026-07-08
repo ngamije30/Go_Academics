@@ -15,6 +15,11 @@ Predicts at-risk secondary school students across four structured phases of the 
 
 **Demo video:** _link here_
 
+> **Note:** this live demo runs on Render (cloud) for presentation convenience, which
+> requires an internet connection to reach. In its intended production setting, Go
+> Academics runs on a school's own local server, so teachers on the school's network
+> need no internet access at all — see CLAUDE.md for the offline-first architecture.
+
 ---
 
 ## What it does

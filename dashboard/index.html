@@ -522,8 +522,8 @@ input:focus,select:focus{border-color:var(--navy)}
     <div class="offline-banner">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16A34A" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><circle cx="12" cy="20" r="1" fill="#16A34A"/></svg>
       <div>
-        <div class="offline-banner-text">Works without internet</div>
-        <div class="offline-banner-sub">Your records are saved on this device and sync on their own once you are back online.</div>
+        <div class="offline-banner-text">Runs on your school's local network</div>
+        <div class="offline-banner-sub">Designed to run on a school's own local server — no internet connection needed once deployed on-site.</div>
       </div>
     </div>
   </div>
@@ -660,8 +660,8 @@ input:focus,select:focus{border-color:var(--navy)}
         <div class="footer-card">
           <div class="footer-card-icon"><svg width="20" height="20" fill="none" stroke="var(--slate)" stroke-width="2" viewBox="0 0 24 24"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-3.51"/></svg></div>
           <div>
-            <div class="footer-card-title">Saved on this device</div>
-            <div class="footer-card-sub">Nothing is lost when you go offline. Records upload on their own once a connection is found.</div>
+            <div class="footer-card-title">Local-server architecture</div>
+            <div class="footer-card-sub">Built to run on a school's own server on its local network, independent of internet access.</div>
           </div>
         </div>
         <div class="footer-card">
@@ -790,10 +790,10 @@ input:focus,select:focus{border-color:var(--navy)}
           </div>
           <div class="offline-card">
             <svg width="20" height="20" fill="none" stroke="#94A3B8" stroke-width="2" viewBox="0 0 24 24" style="margin-bottom:10px"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><circle cx="12" cy="20" r="1" fill="#94A3B8"/></svg>
-            <div class="offline-label">OFFLINE STATUS</div>
+            <div class="offline-label">STUDENT RECORDS</div>
             <div class="offline-count" id="offline-count">—</div>
-            <div style="font-size:13px;color:#94A3B8;margin-top:2px">records pending sync</div>
-            <div class="offline-desc">Connect to a network to upload your local student records to the central server.</div>
+            <div style="font-size:13px;color:#94A3B8;margin-top:2px">records in the database</div>
+            <div class="offline-desc">In production, this database runs on the school's own server — no external connection required.</div>
           </div>
         </div>
       </div>
@@ -1246,7 +1246,7 @@ function loadAll() {
 setInterval(loadAll, 60000);
 
 function updateSyncBadge(count) {
-  document.getElementById('sync-label').textContent = count + ' records to sync';
+  document.getElementById('sync-label').textContent = count + ' students loaded';
   document.getElementById('offline-count').textContent = count;
 }
 
@@ -1456,7 +1456,7 @@ function showDetail(code) {
           </tbody>
         </table>
         <div style="padding:10px 16px;font-size:11px;color:#94A3B8;border-top:1px solid var(--border)">
-          ↻ Data last synced 2 hours ago · Offline cache available for Kigali Secondary Network.
+          Term 1, 2024 school year — Excella Secondary School Rwanda
         </div>
       </div>
     </div>`;
