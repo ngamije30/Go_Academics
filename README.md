@@ -2,9 +2,34 @@
 
 **Offline-first ML early warning system for student academic risk in Rwanda.**
 
-Predicts at-risk secondary school students across four structured phases of the academic term and delivers actionable alerts to teachers — before end-of-term exams.
-
 > Capstone project — ALU BSc Software Engineering · NGAMIJE RUHUMULIZA Davy
+
+## Problem it solves
+
+Existing tools used in Rwandan schools — Academic Bridge, REB e-learning — only report
+how a student performed *after* the fact, and require a constant internet connection to
+use at all. By the time a teacher sees the numbers, the term is often already over and
+there's no time left to intervene.
+
+Go Academics predicts which students are at risk of falling behind **during** the term,
+not after it, and is built to run entirely on a school's own local server — so it works
+regardless of internet access.
+
+![Go Academics dashboard](docs/screenshots/01_dashboard_overview.png)
+
+## Key features
+
+- **Four-phase early warning model** — rule-based checks early in the term (attendance,
+  CA scores), handing off to a trained ML model once there's enough data to predict
+  reliably
+- **Explainable predictions** — every risk score comes with the specific reasons behind
+  it (e.g. low CA score, declining trend), not just a number
+- **Real data** — trained and demoed on real, anonymized records from Excella Secondary
+  School Rwanda (78 students), not synthetic data
+- **Actionable, not just informative** — each at-risk flag comes with a concrete
+  recommendation ("schedule a teacher check-in," "contact guardian before exams")
+- **Offline-first architecture** — designed to run on a school's own server on its local
+  network, independent of internet access
 
 ---
 
@@ -18,7 +43,7 @@ Predicts at-risk secondary school students across four structured phases of the 
 > **Note:** this live demo runs on Render (cloud) for presentation convenience, which
 > requires an internet connection to reach. In its intended production setting, Go
 > Academics runs on a school's own local server, so teachers on the school's network
-> need no internet access at all — see CLAUDE.md for the offline-first architecture.
+> need no internet access at all.
 
 ---
 
@@ -167,9 +192,9 @@ Go_Academics/
 │   └── seed.py                  # Seeds all 78 real students with model-predicted risk scores
 ├── dashboard/
 │   └── index.html               # Teacher dashboard (served by the backend, offline-capable)
-├── docs/
-│   └── ML_Track_Notebook.ipynb  # ML demo notebook (Initial Software Demo)
-└── CLAUDE.md                    # Project memory and conventions
+└── docs/
+    ├── ML_Track_Notebook.ipynb  # ML demo notebook (Initial Software Demo)
+    └── screenshots/             # Testing evidence (see "Testing results" below)
 ```
 
 ---
