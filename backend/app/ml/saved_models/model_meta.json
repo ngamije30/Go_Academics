@@ -1,6 +1,6 @@
 {
-  "best_model": "Logistic Regression",
-  "n_samples": 212,
+  "best_model": "Random Forest",
+  "n_samples": 1840,
   "feature_cols": [
     "School",
     "Gender",
@@ -13,65 +13,70 @@
   ],
   "encodings": {
     "School": {
-      "School A": 0
+      "School A": 0,
+      "School B": 1
     },
     "Gender": {
       "Female": 0,
       "Male": 1
     },
     "Stream": {
-      "Grade 10": 0
+      "Grade 10": 0,
+      "S4": 1,
+      "S5": 2,
+      "S6": 3
     },
     "Subject": {
       "English": 0,
-      "French": 1
+      "French": 1,
+      "Mathematics": 2
     }
   },
-  "shap_compatible": false,
+  "shap_compatible": true,
   "thresholds": {
-    "medium": 0.768,
-    "high": 0.918
+    "medium": 0.414,
+    "high": 0.564
   },
   "metrics": {
-    "model": "Logistic Regression",
-    "accuracy": 95.35,
-    "recall": 90.48,
-    "precision": 100.0,
-    "f1": 95.0,
-    "auc_roc": 99.78,
-    "cv_recall_mean": 95.28,
-    "cv_recall_std": 3.01
+    "model": "Random Forest",
+    "accuracy": 93.75,
+    "recall": 94.57,
+    "precision": 93.05,
+    "f1": 93.8,
+    "auc_roc": 98.96,
+    "cv_recall_mean": 63.7,
+    "cv_recall_std": 26.06
   },
   "all_results": [
     {
       "model": "Logistic Regression",
-      "accuracy": 95.35,
-      "recall": 90.48,
-      "precision": 100.0,
-      "f1": 95.0,
-      "auc_roc": 99.78,
-      "cv_recall_mean": 95.28,
-      "cv_recall_std": 3.01
+      "accuracy": 92.66,
+      "recall": 91.85,
+      "precision": 93.37,
+      "f1": 92.6,
+      "auc_roc": 97.93,
+      "cv_recall_mean": 85.54,
+      "cv_recall_std": 7.47
     },
     {
       "model": "Random Forest",
-      "accuracy": 95.35,
-      "recall": 90.48,
-      "precision": 100.0,
-      "f1": 95.0,
-      "auc_roc": 99.13,
-      "cv_recall_mean": 98.14,
-      "cv_recall_std": 2.28
+      "accuracy": 93.75,
+      "recall": 94.57,
+      "precision": 93.05,
+      "f1": 93.8,
+      "auc_roc": 98.96,
+      "cv_recall_mean": 63.7,
+      "cv_recall_std": 26.06
     },
     {
       "model": "XGBoost",
-      "accuracy": 95.35,
-      "recall": 90.48,
-      "precision": 100.0,
-      "f1": 95.0,
-      "auc_roc": 98.05,
-      "cv_recall_mean": 94.37,
-      "cv_recall_std": 3.47
+      "accuracy": 94.02,
+      "recall": 92.39,
+      "precision": 95.51,
+      "f1": 93.92,
+      "auc_roc": 98.97,
+      "cv_recall_mean": 83.7,
+      "cv_recall_std": 12.31
     }
   ]
 }

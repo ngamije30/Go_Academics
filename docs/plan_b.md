@@ -1,12 +1,17 @@
 # Plan B Dataset — UCI Student Performance
 
-> **Status: inactive.** Real Kigali school data arrived (Excella Secondary
-> School, School A, Term 1) and is now the active pipeline via
-> `data/preprocess.py`. The Plan B logic described below has moved to
-> `data/preprocess_plan_b.py` and is kept only for reference / reactivation
-> if data collection for a future school or term is delayed. Performance
-> numbers below are from the last Plan B training run — see
-> `backend/app/ml/saved_models/model_meta.json` for current real-data metrics.
+> **Status: merged into training data (not a standalone fallback anymore).**
+> Real Kigali school data (Excella Secondary School, School A, Term 1)
+> remains the only data ever seeded into the live demo database
+> (`data/preprocess.py` → `data/processed/students.csv` → `data/seed.py`).
+> But per supervisor instruction, this UCI dataset is now combined with
+> Excella data for **model training only**, via `data/preprocess_merge.py`,
+> to give the model more rows to learn from and calibrate risk thresholds
+> against. The column-mapping logic below still lives in
+> `data/preprocess_plan_b.py`, now imported as a module rather than run
+> standalone. Performance numbers below are from the last **combined**
+> training run — see `backend/app/ml/saved_models/model_meta.json` for the
+> current live metrics.
 
 ## Why Plan B exists
 
@@ -50,9 +55,12 @@ The dataset is imbalanced. SMOTE is applied during preprocessing to create a bal
 
 ---
 
-## Model performance on Plan B data
+## Model performance on Plan B data (historical, UCI-only — superseded)
 
-Results from the most recent training run (`backend/app/ml/train.py`):
+Results below are from the last **UCI-only** training run, before Excella data
+existed. Kept for historical comparison only — see CLAUDE.md's "Current Model
+Performance" section (or live `/model-info`) for the current combined-dataset
+metrics, which is what's actually deployed.
 
 | Model | Recall | Precision | F1 | AUC-ROC | CV Recall |
 |---|---|---|---|---|---|
@@ -60,20 +68,21 @@ Results from the most recent training run (`backend/app/ml/train.py`):
 | Random Forest | 90.80% | 98.01% | 94.27% | 99.01% | 74.96% ± 25.85% |
 | **XGBoost (selected)** | **93.87%** | **97.45%** | **95.62%** | **99.04%** | **83.56% ± 15.03%** |
 
-XGBoost wins on both recall (priority metric) and F1. Results saved in full to `backend/app/ml/saved_models/model_meta.json`.
-
-**CV instability note**: Random Forest shows high cross-validation variance (±25.85%). This is expected with 1,628 rows — the model is at the boundary of reliable generalisation. XGBoost is more stable (±15.03%) and is the chosen model. When real Kigali school data is available (~480 rows), CV variance will likely increase further due to fewer samples; regularisation parameters (`max_depth`, `learning_rate`) should be re-tuned at that point.
+**CV instability note**: Random Forest showed high cross-validation variance
+(±25.85%) on UCI-only data. The same instability shows up on the combined
+Excella+UCI dataset too (±26.06%) — see CLAUDE.md — so this looks like a
+structural sensitivity of Random Forest to this feature set at this sample
+size, not something that resolves with more rows alone.
 
 ---
 
 ## Risk thresholds
 
-Thresholds are derived from the precision-recall curve on the hold-out test set, not chosen arbitrarily. The derivation is in `train.py → optimal_thresholds()`:
+Thresholds are derived from the precision-recall curve on the hold-out test set, not chosen arbitrarily. The derivation is in `train.py → optimal_thresholds()`.
 
-| Level | Threshold | Method |
-|---|---|---|
-| Medium | score ≥ 0.621 | Maximum F1 point on at-risk PR curve |
-| High | score ≥ 0.771 | First point where at-risk precision ≥ 90% |
+Historical UCI-only thresholds: Medium ≥ 0.621, High ≥ 0.771. **Current
+thresholds** (combined Excella+UCI dataset) are lower — Medium ≥ 0.414, High ≥
+0.564 — see `backend/app/ml/saved_models/model_meta.json` for the live values.
 
 Where `risk_score = 1 − P(Pass)`.
 
@@ -94,13 +103,28 @@ The Plan B remapping preserves the structural relationships between features and
 
 ---
 
-## What changes when real Kigali data arrives
+## What happened when real Kigali data arrived
 
-1. **Remove the school mapping** — real data will already have "School A" / "School B" anonymised codes.
-2. **Remove the age→stream heuristic** — real data will have direct S4/S5/S6 enrollment.
-3. **Recalculate CA_Trend** — use the actual two CA scores per term instead of G1/G2 proxy.
-4. **Retrain from scratch** — run `python data/preprocess.py && python backend/app/ml/train.py`.
-5. **Re-evaluate thresholds** — the PR-curve threshold computation in `train.py` will automatically derive new values from the new data.
-6. **Update this file** — replace performance numbers above with real-data numbers.
+Real Excella data arrived and became the sole source for the live demo
+database (`data/preprocess.py` → `students.csv` → `data/seed.py`) — UCI rows
+never reach the database or any real-student-facing output.
 
-No code changes are required in `predict.py`, `routes/predict.py`, or the dashboard — only the preprocessing and training steps change.
+The supervisor then asked for Excella + UCI to be **merged for training**
+(more rows → better-calibrated thresholds, fixing the 0-Medium-risk-students
+problem the 151-row Excella-only dataset produced). That merge is implemented
+in `data/preprocess_merge.py`:
+
+1. Excella rows keep their real "School A" / anonymised codes; UCI rows get
+   "School A"/"School B" via the same `map_school()` mapping as before.
+2. UCI's age→stream heuristic (`map_stream()`) is unchanged — Excella rows
+   already carry their real "Grade 10" stream directly.
+3. CA_Trend is calculated per-source: Excella uses actual two-CA-score
+   history (`preprocess.py`), UCI still uses the G1→G2 proxy.
+4. Retrain: `python data/preprocess.py && python data/preprocess_merge.py &&
+   python backend/app/ml/train.py`.
+5. Thresholds re-derived automatically from the combined PR curve — see above.
+6. Performance numbers above are kept as historical UCI-only reference;
+   current combined numbers live in CLAUDE.md and `model_meta.json`.
+
+No code changes were required in `predict.py`, `routes/predict.py`, or the
+dashboard — only the preprocessing and training steps changed.

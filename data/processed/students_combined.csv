@@ -1,0 +1,1196 @@
+StudentID,School,Gender,Stream,Term,Subject,CA_Score,Exam_Score,Attendance_Pct,Final_Result,CA_Trend,Source
+S001,School A,Male,Grade 10,1,English,18.1,44.2,85.9,Pass,0.0,Excella
+S001,School A,Male,Grade 10,1,French,22.0,52.9,85.9,Pass,0.0,Excella
+S002,School A,Male,Grade 10,1,English,14.1,33.6,79.3,Fail,0.0,Excella
+S002,School A,Male,Grade 10,1,French,17.4,40.6,79.3,Pass,0.0,Excella
+S003,School A,Male,Grade 10,1,English,16.2,40.8,75.5,Pass,0.0,Excella
+S003,School A,Male,Grade 10,1,French,11.8,29.5,75.5,Fail,0.0,Excella
+S004,School A,Male,Grade 10,1,English,16.3,44.2,84.7,Pass,0.0,Excella
+S004,School A,Male,Grade 10,1,French,23.3,53.4,84.7,Pass,0.0,Excella
+S005,School A,Female,Grade 10,1,French,6.4,15.2,68.5,Fail,0.0,Excella
+S006,School A,Male,Grade 10,1,English,14.7,39.6,81.8,Pass,0.0,Excella
+S006,School A,Male,Grade 10,1,French,25.3,57.1,81.8,Pass,0.0,Excella
+S007,School A,Female,Grade 10,1,English,17.0,34.7,86.0,Fail,0.0,Excella
+S007,School A,Female,Grade 10,1,French,26.5,60.0,86.0,Pass,0.0,Excella
+S008,School A,Male,Grade 10,1,English,22.5,58.6,88.0,Pass,0.0,Excella
+S008,School A,Male,Grade 10,1,French,24.4,59.6,88.0,Pass,0.0,Excella
+S009,School A,Male,Grade 10,1,English,13.6,33.2,82.5,Fail,0.0,Excella
+S009,School A,Male,Grade 10,1,French,27.5,63.8,82.5,Pass,0.0,Excella
+S010,School A,Female,Grade 10,1,French,14.4,40.5,82.9,Pass,0.0,Excella
+S011,School A,Male,Grade 10,1,English,16.7,40.8,91.5,Pass,0.0,Excella
+S011,School A,Male,Grade 10,1,French,30.0,70.0,91.5,Pass,0.0,Excella
+S012,School A,Male,Grade 10,1,English,14.9,30.4,79.3,Fail,0.0,Excella
+S012,School A,Male,Grade 10,1,French,17.8,39.4,79.3,Pass,0.0,Excella
+S013,School A,Female,Grade 10,1,English,9.2,19.9,80.4,Fail,0.0,Excella
+S013,School A,Female,Grade 10,1,French,20.2,46.7,80.4,Pass,0.0,Excella
+S014,School A,Male,Grade 10,1,English,23.0,53.2,87.8,Pass,0.0,Excella
+S014,School A,Male,Grade 10,1,French,24.0,56.6,87.8,Pass,0.0,Excella
+S015,School A,Male,Grade 10,1,English,16.0,44.0,83.1,Pass,0.0,Excella
+S015,School A,Male,Grade 10,1,French,18.2,40.3,83.1,Pass,0.0,Excella
+S016,School A,Female,Grade 10,1,English,15.0,34.6,81.9,Fail,0.0,Excella
+S016,School A,Female,Grade 10,1,French,23.7,58.8,81.9,Pass,0.0,Excella
+S017,School A,Female,Grade 10,1,English,21.5,54.0,91.4,Pass,0.0,Excella
+S017,School A,Female,Grade 10,1,French,25.7,61.8,91.4,Pass,0.0,Excella
+S018,School A,Female,Grade 10,1,English,11.2,34.3,82.0,Fail,0.0,Excella
+S018,School A,Female,Grade 10,1,French,26.6,59.1,82.0,Pass,0.0,Excella
+S019,School A,Male,Grade 10,1,English,13.5,30.1,83.1,Fail,0.0,Excella
+S019,School A,Male,Grade 10,1,French,26.9,64.0,83.1,Pass,0.0,Excella
+S020,School A,Female,Grade 10,1,English,10.8,21.0,71.7,Fail,0.0,Excella
+S020,School A,Female,Grade 10,1,French,11.5,24.9,71.7,Fail,0.0,Excella
+S021,School A,Male,Grade 10,1,English,23.3,54.0,79.2,Pass,0.0,Excella
+S021,School A,Male,Grade 10,1,French,15.0,37.6,79.2,Pass,0.0,Excella
+S022,School A,Female,Grade 10,1,English,20.6,50.9,95.9,Pass,0.0,Excella
+S022,School A,Female,Grade 10,1,French,24.4,62.0,95.9,Pass,0.0,Excella
+S023,School A,Female,Grade 10,1,English,14.4,34.4,78.1,Pass,0.0,Excella
+S023,School A,Female,Grade 10,1,French,24.0,56.5,78.1,Pass,0.0,Excella
+S024,School A,Female,Grade 10,1,English,19.6,37.6,75.3,Pass,0.0,Excella
+S024,School A,Female,Grade 10,1,French,22.0,43.7,75.3,Pass,0.0,Excella
+S025,School A,Male,Grade 10,1,English,21.1,54.2,92.6,Pass,0.0,Excella
+S025,School A,Male,Grade 10,1,French,25.5,55.8,92.6,Pass,0.0,Excella
+S026,School A,Female,Grade 10,1,English,24.9,53.9,94.3,Pass,0.0,Excella
+S026,School A,Female,Grade 10,1,French,26.8,64.6,94.3,Pass,0.0,Excella
+S027,School A,Female,Grade 10,1,English,18.0,40.2,87.1,Pass,0.0,Excella
+S027,School A,Female,Grade 10,1,French,22.8,59.5,87.1,Pass,0.0,Excella
+S028,School A,Female,Grade 10,1,English,16.5,44.8,90.1,Pass,0.0,Excella
+S028,School A,Female,Grade 10,1,French,29.3,65.3,90.1,Pass,0.0,Excella
+S029,School A,Female,Grade 10,1,English,16.4,42.2,85.6,Pass,0.0,Excella
+S029,School A,Female,Grade 10,1,French,26.5,61.0,85.6,Pass,0.0,Excella
+S030,School A,Female,Grade 10,1,English,25.3,59.3,89.4,Pass,0.0,Excella
+S030,School A,Female,Grade 10,1,French,26.9,67.2,89.4,Pass,0.0,Excella
+S031,School A,Female,Grade 10,1,French,5.4,17.2,63.7,Fail,0.0,Excella
+S032,School A,Male,Grade 10,1,English,18.4,39.3,82.5,Pass,0.0,Excella
+S032,School A,Male,Grade 10,1,French,24.3,60.1,82.5,Pass,0.0,Excella
+S033,School A,Male,Grade 10,1,English,17.0,39.5,83.9,Pass,0.0,Excella
+S033,School A,Male,Grade 10,1,French,17.9,41.6,83.9,Pass,0.0,Excella
+S034,School A,Female,Grade 10,1,English,22.3,45.7,72.7,Pass,0.0,Excella
+S034,School A,Female,Grade 10,1,French,5.5,12.2,72.7,Fail,0.0,Excella
+S035,School A,Male,Grade 10,1,English,9.6,23.0,66.4,Fail,0.0,Excella
+S035,School A,Male,Grade 10,1,French,10.5,25.4,66.4,Fail,0.0,Excella
+S036,School A,Female,Grade 10,1,English,13.7,30.9,82.5,Fail,0.0,Excella
+S036,School A,Female,Grade 10,1,French,29.1,66.4,82.5,Pass,0.0,Excella
+S037,School A,Male,Grade 10,1,English,17.4,45.5,74.3,Pass,0.0,Excella
+S037,School A,Male,Grade 10,1,French,6.0,10.0,74.3,Fail,0.0,Excella
+S038,School A,Male,Grade 10,1,English,7.4,19.9,68.7,Fail,0.0,Excella
+S038,School A,Male,Grade 10,1,French,15.2,34.4,68.7,Fail,0.0,Excella
+S039,School A,Male,Grade 10,1,English,16.8,36.6,74.8,Pass,0.0,Excella
+S039,School A,Male,Grade 10,1,French,20.0,41.1,74.8,Pass,0.0,Excella
+S040,School A,Male,Grade 10,1,English,19.8,41.6,79.7,Pass,0.0,Excella
+S040,School A,Male,Grade 10,1,French,15.0,36.0,79.7,Pass,0.0,Excella
+S041,School A,Male,Grade 10,1,English,19.4,41.9,76.6,Pass,0.0,Excella
+S041,School A,Male,Grade 10,1,French,13.0,24.2,76.6,Fail,0.0,Excella
+S042,School A,Female,Grade 10,1,English,16.4,44.1,77.5,Pass,0.0,Excella
+S042,School A,Female,Grade 10,1,French,15.8,41.8,77.5,Pass,0.0,Excella
+S043,School A,Male,Grade 10,1,English,21.2,43.6,82.5,Pass,0.0,Excella
+S043,School A,Male,Grade 10,1,French,24.8,52.3,82.5,Pass,0.0,Excella
+S044,School A,Male,Grade 10,1,English,17.4,35.7,79.4,Pass,0.0,Excella
+S044,School A,Male,Grade 10,1,French,15.4,42.3,79.4,Pass,0.0,Excella
+S045,School A,Female,Grade 10,1,French,27.2,62.5,86.2,Pass,0.0,Excella
+S046,School A,Male,Grade 10,1,English,18.5,46.6,78.6,Pass,0.0,Excella
+S046,School A,Male,Grade 10,1,French,21.5,49.0,78.6,Pass,0.0,Excella
+S047,School A,Female,Grade 10,1,English,13.7,28.0,74.2,Fail,0.0,Excella
+S047,School A,Female,Grade 10,1,French,16.3,43.9,74.2,Pass,0.0,Excella
+S048,School A,Male,Grade 10,1,English,11.0,29.4,71.2,Fail,0.0,Excella
+S048,School A,Male,Grade 10,1,French,13.0,31.1,71.2,Fail,0.0,Excella
+S049,School A,Male,Grade 10,1,French,5.8,13.3,64.6,Fail,0.0,Excella
+S050,School A,Male,Grade 10,1,English,16.7,42.3,89.9,Pass,0.0,Excella
+S050,School A,Male,Grade 10,1,French,22.8,57.0,89.9,Pass,0.0,Excella
+S051,School A,Female,Grade 10,1,English,14.6,37.4,77.5,Pass,0.0,Excella
+S051,School A,Female,Grade 10,1,French,10.8,28.9,77.5,Fail,0.0,Excella
+S052,School A,Male,Grade 10,1,English,10.0,26.4,75.4,Fail,0.0,Excella
+S052,School A,Male,Grade 10,1,French,18.4,46.1,75.4,Pass,0.0,Excella
+S053,School A,Male,Grade 10,1,English,22.6,51.3,80.3,Pass,0.0,Excella
+S053,School A,Male,Grade 10,1,French,15.2,31.7,80.3,Fail,0.0,Excella
+S054,School A,Female,Grade 10,1,English,22.5,50.8,80.0,Pass,0.0,Excella
+S054,School A,Female,Grade 10,1,French,20.4,46.2,80.0,Pass,0.0,Excella
+S055,School A,Female,Grade 10,1,English,12.5,27.0,81.8,Fail,0.0,Excella
+S055,School A,Female,Grade 10,1,French,26.2,59.4,81.8,Pass,0.0,Excella
+S056,School A,Female,Grade 10,1,English,10.4,30.0,72.7,Fail,0.0,Excella
+S056,School A,Female,Grade 10,1,French,15.6,31.4,72.7,Fail,0.0,Excella
+S057,School A,Male,Grade 10,1,English,16.3,43.5,90.7,Pass,0.0,Excella
+S057,School A,Male,Grade 10,1,French,30.0,69.6,90.7,Pass,0.0,Excella
+S058,School A,Male,Grade 10,1,English,18.9,43.3,81.7,Pass,0.0,Excella
+S058,School A,Male,Grade 10,1,French,24.4,55.2,81.7,Pass,0.0,Excella
+S059,School A,Male,Grade 10,1,English,20.4,42.7,87.1,Pass,0.0,Excella
+S059,School A,Male,Grade 10,1,French,21.9,57.0,87.1,Pass,0.0,Excella
+S060,School A,Female,Grade 10,1,English,13.8,30.5,85.7,Fail,0.0,Excella
+S060,School A,Female,Grade 10,1,French,19.6,52.4,85.7,Pass,0.0,Excella
+S061,School A,Female,Grade 10,1,English,16.5,40.6,77.0,Pass,0.0,Excella
+S061,School A,Female,Grade 10,1,French,14.8,36.1,77.0,Pass,0.0,Excella
+S062,School A,Female,Grade 10,1,English,14.0,32.5,74.2,Fail,0.0,Excella
+S062,School A,Female,Grade 10,1,French,11.4,26.4,74.2,Fail,0.0,Excella
+S063,School A,Female,Grade 10,1,English,9.8,20.0,76.0,Fail,0.0,Excella
+S063,School A,Female,Grade 10,1,French,17.7,39.9,76.0,Pass,0.0,Excella
+S064,School A,Male,Grade 10,1,English,24.8,55.4,87.4,Pass,0.0,Excella
+S064,School A,Male,Grade 10,1,French,25.3,61.2,87.4,Pass,0.0,Excella
+S065,School A,Male,Grade 10,1,English,9.8,25.7,74.8,Fail,0.0,Excella
+S065,School A,Male,Grade 10,1,French,16.3,38.4,74.8,Pass,0.0,Excella
+S066,School A,Male,Grade 10,1,English,13.6,29.7,68.1,Fail,0.0,Excella
+S066,School A,Male,Grade 10,1,French,7.2,14.1,68.1,Fail,0.0,Excella
+S067,School A,Male,Grade 10,1,English,14.8,33.4,69.5,Fail,0.0,Excella
+S067,School A,Male,Grade 10,1,French,8.3,13.3,69.5,Fail,0.0,Excella
+S068,School A,Male,Grade 10,1,English,13.1,29.3,73.1,Fail,0.0,Excella
+S068,School A,Male,Grade 10,1,French,18.2,40.6,73.1,Pass,0.0,Excella
+S069,School A,Male,Grade 10,1,English,18.3,46.4,85.1,Pass,0.0,Excella
+S069,School A,Male,Grade 10,1,French,21.0,52.9,85.1,Pass,0.0,Excella
+S070,School A,Female,Grade 10,1,English,19.6,43.6,78.8,Pass,0.0,Excella
+S070,School A,Female,Grade 10,1,French,11.2,25.0,78.8,Fail,0.0,Excella
+S071,School A,Male,Grade 10,1,English,22.6,55.1,94.8,Pass,0.0,Excella
+S071,School A,Male,Grade 10,1,French,23.7,54.1,94.8,Pass,0.0,Excella
+S072,School A,Male,Grade 10,1,English,10.6,31.3,80.9,Fail,0.0,Excella
+S072,School A,Male,Grade 10,1,French,21.6,43.0,80.9,Pass,0.0,Excella
+S073,School A,Male,Grade 10,1,English,12.1,29.5,84.6,Fail,0.0,Excella
+S073,School A,Male,Grade 10,1,French,15.4,40.9,84.6,Pass,0.0,Excella
+S074,School A,Male,Grade 10,1,English,16.0,40.4,76.3,Pass,0.0,Excella
+S074,School A,Male,Grade 10,1,French,18.4,44.6,76.3,Pass,0.0,Excella
+S075,School A,Male,Grade 10,1,English,12.2,30.3,86.4,Fail,0.0,Excella
+S075,School A,Male,Grade 10,1,French,26.1,61.4,86.4,Pass,0.0,Excella
+S076,School A,Female,Grade 10,1,English,17.8,43.7,82.0,Pass,0.0,Excella
+S076,School A,Female,Grade 10,1,French,19.8,43.5,82.0,Pass,0.0,Excella
+S077,School A,Female,Grade 10,1,English,13.8,35.8,87.1,Pass,0.0,Excella
+S077,School A,Female,Grade 10,1,French,16.3,41.9,87.1,Pass,0.0,Excella
+S078,School A,Male,Grade 10,1,English,25.0,57.8,87.0,Pass,0.0,Excella
+S078,School A,Male,Grade 10,1,French,21.3,60.4,87.0,Pass,0.0,Excella
+U001,School A,Female,S6,1,Mathematics,7.5,21.0,88.0,Fail,1.5,UCI
+U002,School A,Female,S5,1,Mathematics,7.5,21.0,92.0,Fail,0.0,UCI
+U003,School A,Female,S4,1,Mathematics,10.5,35.0,80.0,Pass,1.5,UCI
+U004,School A,Female,S4,1,Mathematics,22.5,52.5,96.0,Pass,-1.5,UCI
+U005,School A,Female,S4,1,Mathematics,9.0,35.0,92.0,Pass,6.0,UCI
+U006,School A,Male,S4,1,Mathematics,22.5,52.5,80.0,Pass,0.0,UCI
+U007,School A,Male,S4,1,Mathematics,18.0,38.5,100.0,Pass,0.0,UCI
+U008,School A,Female,S5,1,Mathematics,9.0,21.0,88.0,Fail,-1.5,UCI
+U009,School A,Male,S4,1,Mathematics,24.0,66.5,100.0,Pass,3.0,UCI
+U010,School A,Male,S4,1,Mathematics,21.0,52.5,100.0,Pass,1.5,UCI
+U011,School A,Female,S4,1,Mathematics,15.0,31.5,100.0,Fail,-3.0,UCI
+U012,School A,Female,S4,1,Mathematics,15.0,42.0,92.0,Pass,3.0,UCI
+U013,School A,Male,S4,1,Mathematics,21.0,49.0,96.0,Pass,0.0,UCI
+U014,School A,Male,S4,1,Mathematics,15.0,38.5,96.0,Pass,0.0,UCI
+U015,School A,Male,S4,1,Mathematics,21.0,56.0,100.0,Pass,3.0,UCI
+U016,School A,Female,S4,1,Mathematics,21.0,49.0,92.0,Pass,0.0,UCI
+U017,School A,Female,S4,1,Mathematics,19.5,49.0,88.0,Pass,1.5,UCI
+U018,School A,Female,S4,1,Mathematics,12.0,35.0,92.0,Pass,3.0,UCI
+U019,School A,Male,S5,1,Mathematics,9.0,17.5,68.0,Fail,-1.5,UCI
+U020,School A,Male,S4,1,Mathematics,12.0,35.0,92.0,Pass,3.0,UCI
+U021,School A,Male,S4,1,Mathematics,19.5,52.5,100.0,Pass,1.5,UCI
+U022,School A,Male,S4,1,Mathematics,18.0,52.5,100.0,Pass,4.5,UCI
+U023,School A,Male,S4,1,Mathematics,22.5,56.0,96.0,Pass,0.0,UCI
+U024,School A,Male,S4,1,Mathematics,19.5,42.0,100.0,Pass,0.0,UCI
+U025,School A,Female,S4,1,Mathematics,15.0,28.0,96.0,Fail,-1.5,UCI
+U026,School A,Female,S4,1,Mathematics,9.0,28.0,72.0,Fail,4.5,UCI
+U027,School A,Male,S4,1,Mathematics,18.0,38.5,96.0,Pass,0.0,UCI
+U028,School A,Male,S4,1,Mathematics,22.5,52.5,92.0,Pass,1.5,UCI
+U029,School A,Male,S4,1,Mathematics,16.5,38.5,92.0,Pass,0.0,UCI
+U030,School A,Male,S4,1,Mathematics,15.0,38.5,68.0,Pass,3.0,UCI
+U031,School A,Male,S4,1,Mathematics,13.5,42.0,100.0,Pass,3.0,UCI
+U032,School A,Male,S4,1,Mathematics,25.5,59.5,100.0,Pass,-1.5,UCI
+U033,School A,Male,S4,1,Mathematics,25.5,56.0,100.0,Pass,-1.5,UCI
+U034,School A,Male,S4,1,Mathematics,12.0,42.0,100.0,Pass,3.0,UCI
+U035,School A,Male,S4,1,Mathematics,18.0,52.5,100.0,Pass,3.0,UCI
+U036,School A,Female,S4,1,Mathematics,12.0,21.0,100.0,Fail,-1.5,UCI
+U037,School A,Male,S4,1,Mathematics,22.5,63.0,96.0,Pass,1.5,UCI
+U038,School A,Male,S4,1,Mathematics,22.5,52.5,86.0,Pass,1.5,UCI
+U039,School A,Female,S4,1,Mathematics,18.0,38.5,96.0,Pass,0.0,UCI
+U040,School A,Female,S4,1,Mathematics,21.0,45.5,84.0,Pass,-1.5,UCI
+U041,School A,Female,S4,1,Mathematics,10.5,38.5,50.0,Pass,4.5,UCI
+U042,School A,Male,S4,1,Mathematics,18.0,42.0,84.0,Pass,0.0,UCI
+U043,School A,Male,S4,1,Mathematics,28.5,63.0,96.0,Pass,-1.5,UCI
+U044,School A,Male,S4,1,Mathematics,12.0,38.5,100.0,Pass,0.0,UCI
+U045,School A,Female,S4,1,Mathematics,15.0,31.5,72.0,Fail,0.0,UCI
+U046,School A,Female,S4,1,Mathematics,12.0,21.0,84.0,Fail,0.0,UCI
+U047,School A,Female,S4,1,Mathematics,16.5,38.5,76.0,Pass,1.5,UCI
+U048,School A,Male,S4,1,Mathematics,28.5,70.0,92.0,Pass,0.0,UCI
+U049,School A,Male,S4,1,Mathematics,22.5,49.0,96.0,Pass,0.0,UCI
+U050,School A,Female,S4,1,Mathematics,10.5,24.5,96.0,Fail,0.0,UCI
+U051,School A,Female,S4,1,Mathematics,18.0,45.5,96.0,Pass,1.5,UCI
+U052,School A,Female,S4,1,Mathematics,16.5,45.5,96.0,Pass,3.0,UCI
+U053,School A,Male,S4,1,Mathematics,16.5,35.0,88.0,Pass,0.0,UCI
+U054,School A,Female,S4,1,Mathematics,12.0,38.5,100.0,Pass,3.0,UCI
+U055,School A,Female,S4,1,Mathematics,15.0,45.5,88.0,Pass,4.5,UCI
+U056,School A,Female,S4,1,Mathematics,12.0,35.0,84.0,Pass,1.5,UCI
+U057,School A,Female,S4,1,Mathematics,21.0,52.5,100.0,Pass,1.5,UCI
+U058,School A,Male,S4,1,Mathematics,21.0,52.5,92.0,Pass,1.5,UCI
+U059,School A,Male,S4,1,Mathematics,13.5,31.5,96.0,Fail,1.5,UCI
+U060,School A,Female,S4,1,Mathematics,22.5,56.0,96.0,Pass,1.5,UCI
+U061,School A,Female,S4,1,Mathematics,15.0,38.5,88.0,Pass,1.5,UCI
+U062,School A,Female,S4,1,Mathematics,15.0,38.5,88.0,Pass,-3.0,UCI
+U063,School A,Female,S4,1,Mathematics,12.0,31.5,92.0,Fail,3.0,UCI
+U064,School A,Female,S4,1,Mathematics,15.0,31.5,96.0,Fail,-1.5,UCI
+U065,School A,Female,S4,1,Mathematics,15.0,35.0,100.0,Pass,0.0,UCI
+U066,School A,Female,S4,1,Mathematics,24.0,52.5,96.0,Pass,-1.5,UCI
+U067,School A,Male,S4,1,Mathematics,19.5,42.0,92.0,Pass,0.0,UCI
+U068,School A,Female,S4,1,Mathematics,10.5,21.0,92.0,Fail,0.0,UCI
+U069,School A,Female,S4,1,Mathematics,12.0,28.0,96.0,Fail,1.5,UCI
+U070,School A,Female,S4,1,Mathematics,24.0,56.0,76.0,Pass,0.0,UCI
+U071,School A,Male,S4,1,Mathematics,19.5,52.5,100.0,Pass,3.0,UCI
+U072,School A,Male,S4,1,Mathematics,15.0,35.0,100.0,Pass,0.0,UCI
+U073,School A,Female,S4,1,Mathematics,12.0,17.5,96.0,Fail,-3.0,UCI
+U074,School A,Male,S4,1,Mathematics,18.0,49.0,96.0,Pass,0.0,UCI
+U075,School A,Female,S4,1,Mathematics,16.5,38.5,0.0,Pass,1.5,UCI
+U076,School A,Male,S4,1,Mathematics,13.5,35.0,88.0,Pass,0.0,UCI
+U077,School A,Male,S4,1,Mathematics,16.5,35.0,84.0,Pass,0.0,UCI
+U078,School A,Female,S4,1,Mathematics,16.5,38.5,100.0,Pass,0.0,UCI
+U079,School A,Male,S5,1,Mathematics,12.0,35.0,96.0,Pass,0.0,UCI
+U080,School A,Female,S4,1,Mathematics,7.5,17.5,76.0,Fail,0.0,UCI
+U081,School A,Male,S4,1,Mathematics,15.0,42.0,96.0,Pass,3.0,UCI
+U082,School A,Male,S4,1,Mathematics,16.5,38.5,92.0,Pass,-1.5,UCI
+U083,School A,Female,S4,1,Mathematics,10.5,21.0,80.0,Fail,-1.5,UCI
+U084,School A,Male,S4,1,Mathematics,22.5,52.5,92.0,Pass,0.0,UCI
+U085,School A,Female,S4,1,Mathematics,13.5,35.0,96.0,Pass,1.5,UCI
+U086,School A,Female,S4,1,Mathematics,10.5,28.0,88.0,Fail,3.0,UCI
+U087,School A,Female,S4,1,Mathematics,12.0,21.0,92.0,Fail,-1.5,UCI
+U088,School A,Female,S4,1,Mathematics,19.5,49.0,92.0,Pass,1.5,UCI
+U089,School A,Male,S4,1,Mathematics,16.5,35.0,76.0,Pass,-1.5,UCI
+U090,School A,Male,S4,1,Mathematics,12.0,24.5,64.0,Fail,-3.0,UCI
+U091,School A,Female,S4,1,Mathematics,10.5,28.0,100.0,Fail,0.0,UCI
+U092,School A,Female,S4,1,Mathematics,24.0,63.0,92.0,Pass,1.5,UCI
+U093,School A,Female,S4,1,Mathematics,10.5,21.0,92.0,Fail,-1.5,UCI
+U094,School A,Female,S4,1,Mathematics,16.5,35.0,100.0,Pass,-1.5,UCI
+U095,School A,Male,S4,1,Mathematics,16.5,49.0,88.0,Pass,3.0,UCI
+U096,School A,Female,S4,1,Mathematics,10.5,35.0,96.0,Pass,4.5,UCI
+U097,School A,Male,S4,1,Mathematics,16.5,52.5,96.0,Pass,6.0,UCI
+U098,School A,Female,S4,1,Mathematics,12.0,35.0,96.0,Pass,1.5,UCI
+U099,School A,Female,S4,1,Mathematics,16.5,49.0,88.0,Pass,4.5,UCI
+U100,School A,Female,S4,1,Mathematics,10.5,28.0,100.0,Fail,3.0,UCI
+U101,School A,Male,S4,1,Mathematics,10.5,17.5,72.0,Fail,0.0,UCI
+U102,School A,Male,S4,1,Mathematics,24.0,59.5,100.0,Pass,1.5,UCI
+U103,School A,Male,S4,1,Mathematics,15.0,49.0,92.0,Pass,4.5,UCI
+U104,School A,Female,S4,1,Mathematics,10.5,21.0,48.0,Fail,-1.5,UCI
+U105,School A,Male,S4,1,Mathematics,24.0,63.0,100.0,Pass,3.0,UCI
+U106,School A,Female,S4,1,Mathematics,15.0,38.5,80.0,Pass,1.5,UCI
+U107,School A,Female,S4,1,Mathematics,10.5,28.0,84.0,Fail,1.5,UCI
+U108,School A,Male,S4,1,Mathematics,24.0,63.0,96.0,Pass,3.0,UCI
+U109,School A,Male,S4,1,Mathematics,15.0,45.5,88.0,Pass,4.5,UCI
+U110,School A,Female,S4,1,Mathematics,21.0,56.0,92.0,Pass,1.5,UCI
+U111,School A,Male,S4,1,Mathematics,27.0,66.5,88.0,Pass,1.5,UCI
+U112,School A,Female,S4,1,Mathematics,10.5,35.0,100.0,Pass,4.5,UCI
+U113,School A,Female,S4,1,Mathematics,15.0,45.5,88.0,Pass,4.5,UCI
+U114,School A,Male,S4,1,Mathematics,27.0,66.5,80.0,Pass,1.5,UCI
+U115,School A,Male,S4,1,Mathematics,13.5,31.5,84.0,Fail,0.0,UCI
+U116,School A,Male,S4,1,Mathematics,22.5,56.0,96.0,Pass,0.0,UCI
+U117,School A,Male,S4,1,Mathematics,16.5,49.0,96.0,Pass,3.0,UCI
+U118,School A,Male,S4,1,Mathematics,19.5,45.5,100.0,Pass,1.5,UCI
+U119,School A,Male,S5,1,Mathematics,13.5,28.0,60.0,Fail,-3.0,UCI
+U120,School A,Male,S4,1,Mathematics,21.0,45.5,88.0,Pass,-1.5,UCI
+U121,School A,Female,S4,1,Mathematics,24.0,52.5,96.0,Pass,-1.5,UCI
+U122,School A,Male,S4,1,Mathematics,24.0,52.5,88.0,Pass,-3.0,UCI
+U123,School A,Female,S4,1,Mathematics,19.5,45.5,96.0,Pass,0.0,UCI
+U124,School A,Male,S4,1,Mathematics,21.0,45.5,64.0,Pass,-4.5,UCI
+U125,School A,Female,S4,1,Mathematics,12.0,28.0,100.0,Fail,-1.5,UCI
+U126,School A,Male,S4,1,Mathematics,19.5,42.0,100.0,Pass,0.0,UCI
+U127,School A,Female,S4,1,Mathematics,10.5,38.5,100.0,Pass,4.5,UCI
+U128,School A,Female,S6,1,Mathematics,10.5,31.5,96.0,Fail,1.5,UCI
+U129,School A,Male,S6,1,Mathematics,10.5,0.0,100.0,Fail,-4.5,UCI
+U130,School A,Male,S4,1,Mathematics,27.0,63.0,84.0,Pass,0.0,UCI
+U131,School A,Female,S4,1,Mathematics,18.0,0.0,100.0,Fail,-18.0,UCI
+U132,School A,Female,S4,1,Mathematics,12.0,0.0,100.0,Fail,-12.0,UCI
+U133,School A,Female,S5,1,Mathematics,15.0,42.0,76.0,Pass,4.5,UCI
+U134,School A,Female,S4,1,Mathematics,18.0,38.5,68.0,Pass,-1.5,UCI
+U135,School A,Male,S4,1,Mathematics,13.5,0.0,100.0,Fail,-13.5,UCI
+U136,School A,Female,S4,1,Mathematics,16.5,0.0,100.0,Fail,-16.5,UCI
+U137,School A,Male,S5,1,Mathematics,15.0,0.0,100.0,Fail,-15.0,UCI
+U138,School A,Female,S4,1,Mathematics,6.0,0.0,100.0,Fail,-6.0,UCI
+U139,School A,Male,S4,1,Mathematics,21.0,42.0,100.0,Pass,-3.0,UCI
+U140,School A,Female,S4,1,Mathematics,24.0,52.5,100.0,Pass,0.0,UCI
+U141,School A,Male,S4,1,Mathematics,10.5,0.0,100.0,Fail,3.0,UCI
+U142,School A,Male,S4,1,Mathematics,13.5,31.5,84.0,Fail,0.0,UCI
+U143,School A,Female,S4,1,Mathematics,13.5,38.5,96.0,Pass,3.0,UCI
+U144,School A,Female,S4,1,Mathematics,21.0,45.5,96.0,Pass,0.0,UCI
+U145,School A,Male,S5,1,Mathematics,7.5,0.0,100.0,Fail,-7.5,UCI
+U146,School A,Female,S4,1,Mathematics,12.0,38.5,100.0,Pass,4.5,UCI
+U147,School A,Female,S4,1,Mathematics,9.0,0.0,100.0,Fail,1.5,UCI
+U148,School A,Female,S4,1,Mathematics,15.0,38.5,96.0,Pass,1.5,UCI
+U149,School A,Male,S4,1,Mathematics,10.5,0.0,100.0,Fail,-1.5,UCI
+U150,School A,Male,S4,1,Mathematics,12.0,35.0,100.0,Pass,1.5,UCI
+U151,School A,Male,S6,1,Mathematics,9.0,0.0,100.0,Fail,-1.5,UCI
+U152,School A,Male,S4,1,Mathematics,18.0,49.0,88.0,Pass,1.5,UCI
+U153,School A,Female,S4,1,Mathematics,15.0,35.0,84.0,Pass,0.0,UCI
+U154,School A,Male,S6,1,Mathematics,7.5,0.0,100.0,Fail,-7.5,UCI
+U155,School A,Female,S5,1,Mathematics,16.5,42.0,100.0,Pass,0.0,UCI
+U156,School A,Male,S4,1,Mathematics,16.5,28.0,96.0,Fail,-4.5,UCI
+U157,School A,Male,S5,1,Mathematics,24.0,45.5,84.0,Pass,-6.0,UCI
+U158,School A,Female,S6,1,Mathematics,13.5,35.0,88.0,Pass,-1.5,UCI
+U159,School A,Male,S4,1,Mathematics,25.5,52.5,96.0,Pass,-3.0,UCI
+U160,School A,Male,S4,1,Mathematics,15.0,42.0,92.0,Pass,3.0,UCI
+U161,School A,Male,S5,1,Mathematics,10.5,0.0,100.0,Fail,-1.5,UCI
+U162,School A,Male,S4,1,Mathematics,7.5,24.5,88.0,Fail,6.0,UCI
+U163,School A,Male,S4,1,Mathematics,10.5,0.0,100.0,Fail,-10.5,UCI
+U164,School A,Male,S5,1,Mathematics,15.0,35.0,96.0,Pass,0.0,UCI
+U165,School A,Male,S5,1,Mathematics,7.5,24.5,100.0,Fail,4.5,UCI
+U166,School A,Male,S4,1,Mathematics,18.0,42.0,68.0,Pass,-1.5,UCI
+U167,School A,Male,S4,1,Mathematics,15.0,35.0,92.0,Pass,0.0,UCI
+U168,School A,Female,S4,1,Mathematics,21.0,56.0,100.0,Pass,1.5,UCI
+U169,School A,Female,S4,1,Mathematics,9.0,0.0,100.0,Fail,1.5,UCI
+U170,School A,Female,S4,1,Mathematics,21.0,49.0,100.0,Pass,0.0,UCI
+U171,School A,Male,S4,1,Mathematics,9.0,0.0,100.0,Fail,-1.5,UCI
+U172,School A,Male,S4,1,Mathematics,19.5,56.0,96.0,Pass,3.0,UCI
+U173,School A,Male,S5,1,Mathematics,19.5,35.0,100.0,Pass,-3.0,UCI
+U174,School A,Female,S4,1,Mathematics,12.0,0.0,100.0,Fail,-1.5,UCI
+U175,School A,Female,S4,1,Mathematics,15.0,31.5,92.0,Fail,1.5,UCI
+U176,School A,Male,S5,1,Mathematics,15.0,31.5,92.0,Fail,-1.5,UCI
+U177,School A,Female,S4,1,Mathematics,19.5,38.5,96.0,Pass,0.0,UCI
+U178,School A,Male,S5,1,Mathematics,9.0,21.0,92.0,Fail,-1.5,UCI
+U179,School A,Male,S4,1,Mathematics,15.0,31.5,80.0,Fail,-3.0,UCI
+U180,School A,Male,S5,1,Mathematics,15.0,38.5,92.0,Pass,0.0,UCI
+U181,School A,Male,S4,1,Mathematics,13.5,28.0,80.0,Fail,-1.5,UCI
+U182,School A,Male,S4,1,Mathematics,18.0,42.0,96.0,Pass,1.5,UCI
+U183,School A,Female,S5,1,Mathematics,24.0,59.5,100.0,Pass,1.5,UCI
+U184,School A,Female,S5,1,Mathematics,13.5,28.0,0.0,Fail,0.0,UCI
+U185,School A,Female,S4,1,Mathematics,18.0,42.0,72.0,Pass,1.5,UCI
+U186,School A,Male,S5,1,Mathematics,18.0,38.5,76.0,Pass,0.0,UCI
+U187,School A,Male,S4,1,Mathematics,16.5,38.5,96.0,Pass,1.5,UCI
+U188,School A,Male,S4,1,Mathematics,22.5,52.5,100.0,Pass,0.0,UCI
+U189,School A,Female,S5,1,Mathematics,12.0,31.5,88.0,Fail,-1.5,UCI
+U190,School A,Male,S5,1,Mathematics,12.0,35.0,92.0,Pass,1.5,UCI
+U191,School A,Female,S4,1,Mathematics,16.5,45.5,80.0,Pass,1.5,UCI
+U192,School A,Female,S5,1,Mathematics,12.0,31.5,100.0,Fail,0.0,UCI
+U193,School A,Male,S5,1,Mathematics,10.5,28.0,76.0,Fail,1.5,UCI
+U194,School A,Male,S4,1,Mathematics,12.0,35.0,84.0,Pass,1.5,UCI
+U195,School A,Male,S4,1,Mathematics,19.5,49.0,100.0,Pass,1.5,UCI
+U196,School A,Female,S5,1,Mathematics,21.0,52.5,100.0,Pass,1.5,UCI
+U197,School A,Male,S5,1,Mathematics,25.5,56.0,92.0,Pass,-3.0,UCI
+U198,School A,Male,S4,1,Mathematics,13.5,35.0,84.0,Pass,0.0,UCI
+U199,School A,Female,S5,1,Mathematics,27.0,63.0,52.0,Pass,0.0,UCI
+U200,School A,Female,S4,1,Mathematics,13.5,35.0,100.0,Pass,0.0,UCI
+U201,School A,Female,S4,1,Mathematics,24.0,56.0,96.0,Pass,0.0,UCI
+U202,School A,Female,S4,1,Mathematics,12.0,35.0,88.0,Pass,3.0,UCI
+U203,School A,Female,S5,1,Mathematics,13.5,35.0,92.0,Pass,0.0,UCI
+U204,School A,Female,S5,1,Mathematics,10.5,21.0,64.0,Fail,-1.5,UCI
+U205,School A,Female,S4,1,Mathematics,15.0,38.5,88.0,Pass,0.0,UCI
+U206,School A,Female,S5,1,Mathematics,15.0,31.5,44.0,Fail,-1.5,UCI
+U207,School A,Female,S4,1,Mathematics,10.5,24.5,90.0,Fail,0.0,UCI
+U208,School A,Female,S4,1,Mathematics,16.5,45.5,80.0,Pass,1.5,UCI
+U209,School A,Female,S4,1,Mathematics,13.5,35.0,88.0,Pass,0.0,UCI
+U210,School A,Female,S5,1,Mathematics,10.5,24.5,88.0,Fail,0.0,UCI
+U211,School A,Female,S6,1,Mathematics,12.0,28.0,80.0,Fail,0.0,UCI
+U212,School A,Male,S5,1,Mathematics,18.0,45.5,74.0,Pass,0.0,UCI
+U213,School A,Female,S4,1,Mathematics,18.0,49.0,100.0,Pass,1.5,UCI
+U214,School A,Male,S6,1,Mathematics,9.0,28.0,70.0,Fail,1.5,UCI
+U215,School A,Female,S5,1,Mathematics,12.0,35.0,76.0,Pass,3.0,UCI
+U216,School A,Female,S5,1,Mathematics,21.0,52.5,96.0,Pass,1.5,UCI
+U217,School A,Female,S5,1,Mathematics,9.0,14.0,56.0,Fail,0.0,UCI
+U218,School A,Male,S6,1,Mathematics,9.0,28.0,74.0,Fail,0.0,UCI
+U219,School A,Female,S5,1,Mathematics,10.5,28.0,94.0,Fail,0.0,UCI
+U220,School A,Female,S5,1,Mathematics,13.5,35.0,92.0,Pass,1.5,UCI
+U221,School A,Female,S5,1,Mathematics,9.0,21.0,96.0,Fail,0.0,UCI
+U222,School A,Female,S5,1,Mathematics,9.0,0.0,100.0,Fail,-1.5,UCI
+U223,School A,Female,S4,1,Mathematics,24.0,59.5,96.0,Pass,0.0,UCI
+U224,School A,Male,S6,1,Mathematics,18.0,45.5,100.0,Pass,1.5,UCI
+U225,School A,Female,S4,1,Mathematics,19.5,49.0,100.0,Pass,0.0,UCI
+U226,School A,Female,S6,1,Mathematics,13.5,24.5,68.0,Fail,-1.5,UCI
+U227,School A,Female,S5,1,Mathematics,24.0,52.5,80.0,Pass,-1.5,UCI
+U228,School A,Male,S5,1,Mathematics,18.0,42.0,96.0,Pass,-1.5,UCI
+U229,School A,Male,S6,1,Mathematics,15.0,31.5,72.0,Fail,-3.0,UCI
+U230,School A,Female,S5,1,Mathematics,18.0,42.0,80.0,Pass,-3.0,UCI
+U231,School A,Female,S5,1,Mathematics,19.5,49.0,72.0,Pass,0.0,UCI
+U232,School A,Male,S5,1,Mathematics,16.5,38.5,92.0,Pass,0.0,UCI
+U233,School A,Male,S5,1,Mathematics,16.5,31.5,72.0,Fail,-3.0,UCI
+U234,School A,Male,S4,1,Mathematics,21.0,45.5,96.0,Pass,-1.5,UCI
+U235,School A,Male,S4,1,Mathematics,13.5,21.0,64.0,Fail,-3.0,UCI
+U236,School A,Male,S4,1,Mathematics,16.5,35.0,80.0,Pass,-3.0,UCI
+U237,School A,Male,S5,1,Mathematics,21.0,45.5,92.0,Pass,-1.5,UCI
+U238,School A,Female,S4,1,Mathematics,19.5,42.0,60.0,Pass,-1.5,UCI
+U239,School A,Female,S5,1,Mathematics,19.5,38.5,96.0,Pass,-3.0,UCI
+U240,School A,Male,S6,1,Mathematics,10.5,0.0,100.0,Fail,0.0,UCI
+U241,School A,Male,S5,1,Mathematics,18.0,42.0,72.0,Pass,0.0,UCI
+U242,School A,Male,S5,1,Mathematics,15.0,42.0,96.0,Pass,1.5,UCI
+U243,School A,Male,S4,1,Mathematics,9.0,0.0,100.0,Fail,-9.0,UCI
+U244,School A,Male,S4,1,Mathematics,19.5,42.0,100.0,Pass,-1.5,UCI
+U245,School A,Female,S6,1,Mathematics,10.5,0.0,100.0,Fail,-10.5,UCI
+U246,School A,Male,S4,1,Mathematics,27.0,63.0,88.0,Pass,0.0,UCI
+U247,School A,Male,S5,1,Mathematics,18.0,45.5,92.0,Pass,0.0,UCI
+U248,School A,Male,S6,1,Mathematics,9.0,28.0,68.0,Fail,3.0,UCI
+U249,School A,Male,S6,1,Mathematics,4.5,17.5,84.0,Fail,3.0,UCI
+U250,School A,Male,S4,1,Mathematics,19.5,52.5,100.0,Pass,3.0,UCI
+U251,School A,Male,S6,1,Mathematics,9.0,28.0,100.0,Fail,3.0,UCI
+U252,School A,Male,S4,1,Mathematics,10.5,35.0,88.0,Pass,4.5,UCI
+U253,School A,Male,S6,1,Mathematics,9.0,28.0,92.0,Fail,4.5,UCI
+U254,School A,Male,S4,1,Mathematics,12.0,28.0,100.0,Fail,1.5,UCI
+U255,School A,Male,S5,1,Mathematics,12.0,42.0,100.0,Pass,6.0,UCI
+U256,School A,Male,S5,1,Mathematics,10.5,28.0,96.0,Fail,3.0,UCI
+U257,School A,Female,S5,1,Mathematics,21.0,45.5,88.0,Pass,-3.0,UCI
+U258,School A,Male,S6,1,Mathematics,16.5,38.5,76.0,Pass,0.0,UCI
+U259,School A,Male,S6,1,Mathematics,22.5,49.0,84.0,Pass,-1.5,UCI
+U260,School A,Female,S5,1,Mathematics,15.0,0.0,100.0,Fail,-1.5,UCI
+U261,School A,Female,S6,1,Mathematics,25.5,63.0,58.0,Pass,1.5,UCI
+U262,School A,Male,S6,1,Mathematics,12.0,28.0,96.0,Fail,0.0,UCI
+U263,School A,Male,S6,1,Mathematics,19.5,42.0,98.0,Pass,-1.5,UCI
+U264,School A,Female,S5,1,Mathematics,15.0,31.5,92.0,Fail,-1.5,UCI
+U265,School A,Female,S6,1,Mathematics,13.5,0.0,100.0,Fail,1.5,UCI
+U266,School A,Male,S6,1,Mathematics,25.5,59.5,74.0,Pass,0.0,UCI
+U267,School A,Male,S5,1,Mathematics,13.5,35.0,96.0,Pass,0.0,UCI
+U268,School A,Female,S6,1,Mathematics,18.0,38.5,84.0,Pass,-3.0,UCI
+U269,School A,Male,S6,1,Mathematics,15.0,35.0,80.0,Pass,-1.5,UCI
+U270,School A,Female,S6,1,Mathematics,9.0,0.0,100.0,Fail,-9.0,UCI
+U271,School A,Female,S6,1,Mathematics,13.5,31.5,70.0,Fail,0.0,UCI
+U272,School A,Female,S6,1,Mathematics,22.5,49.0,92.0,Pass,-1.5,UCI
+U273,School A,Female,S6,1,Mathematics,16.5,38.5,96.0,Pass,0.0,UCI
+U274,School A,Male,S5,1,Mathematics,22.5,49.0,96.0,Pass,-1.5,UCI
+U275,School A,Female,S5,1,Mathematics,15.0,35.0,96.0,Pass,0.0,UCI
+U276,School A,Female,S5,1,Mathematics,18.0,42.0,88.0,Pass,0.0,UCI
+U277,School A,Female,S6,1,Mathematics,15.0,31.5,0.0,Fail,-1.5,UCI
+U278,School A,Male,S6,1,Mathematics,13.5,31.5,56.0,Fail,0.0,UCI
+U279,School A,Female,S6,1,Mathematics,13.5,28.0,70.0,Fail,-1.5,UCI
+U280,School A,Male,S6,1,Mathematics,15.0,35.0,84.0,Pass,1.5,UCI
+U281,School A,Male,S5,1,Mathematics,12.0,28.0,40.0,Fail,0.0,UCI
+U282,School A,Male,S5,1,Mathematics,16.5,35.0,62.0,Pass,-3.0,UCI
+U283,School A,Female,S6,1,Mathematics,18.0,42.0,98.0,Pass,0.0,UCI
+U284,School A,Female,S6,1,Mathematics,12.0,35.0,92.0,Pass,1.5,UCI
+U285,School A,Female,S5,1,Mathematics,15.0,38.5,92.0,Pass,-1.5,UCI
+U286,School A,Male,S5,1,Mathematics,18.0,38.5,96.0,Pass,-3.0,UCI
+U287,School A,Female,S6,1,Mathematics,27.0,66.5,90.0,Pass,0.0,UCI
+U288,School A,Female,S5,1,Mathematics,19.5,42.0,88.0,Pass,-1.5,UCI
+U289,School A,Male,S6,1,Mathematics,22.5,49.0,88.0,Pass,-1.5,UCI
+U290,School A,Male,S6,1,Mathematics,22.5,52.5,82.0,Pass,-3.0,UCI
+U291,School A,Male,S6,1,Mathematics,18.0,38.5,78.0,Pass,-1.5,UCI
+U292,School A,Female,S5,1,Mathematics,22.5,52.5,100.0,Pass,0.0,UCI
+U293,School A,Female,S6,1,Mathematics,18.0,45.5,76.0,Pass,0.0,UCI
+U294,School A,Female,S5,1,Mathematics,27.0,63.0,88.0,Pass,0.0,UCI
+U295,School A,Male,S6,1,Mathematics,21.0,49.0,84.0,Pass,-1.5,UCI
+U296,School A,Male,S5,1,Mathematics,21.0,38.5,92.0,Pass,-3.0,UCI
+U297,School A,Female,S6,1,Mathematics,15.0,0.0,100.0,Fail,-1.5,UCI
+U298,School A,Female,S6,1,Mathematics,15.0,28.0,80.0,Fail,-3.0,UCI
+U299,School A,Female,S6,1,Mathematics,21.0,49.0,100.0,Pass,-1.5,UCI
+U300,School A,Male,S6,1,Mathematics,24.0,56.0,90.0,Pass,-1.5,UCI
+U301,School A,Female,S6,1,Mathematics,18.0,38.5,72.0,Pass,-3.0,UCI
+U302,School A,Male,S5,1,Mathematics,16.5,35.0,100.0,Pass,0.0,UCI
+U303,School A,Female,S5,1,Mathematics,22.5,49.0,100.0,Pass,-4.5,UCI
+U304,School A,Female,S5,1,Mathematics,25.5,63.0,100.0,Pass,0.0,UCI
+U305,School A,Male,S6,1,Mathematics,22.5,45.5,60.0,Pass,-1.5,UCI
+U306,School A,Female,S6,1,Mathematics,21.0,42.0,84.0,Pass,-3.0,UCI
+U307,School A,Male,S6,1,Mathematics,25.5,63.0,100.0,Pass,1.5,UCI
+U308,School A,Male,S6,1,Mathematics,12.0,28.0,24.0,Fail,1.5,UCI
+U309,School A,Male,S6,1,Mathematics,22.5,42.0,100.0,Pass,-4.5,UCI
+U310,School A,Female,S6,1,Mathematics,18.0,35.0,64.0,Pass,-3.0,UCI
+U311,School A,Female,S6,1,Mathematics,13.5,0.0,100.0,Fail,0.0,UCI
+U312,School A,Female,S6,1,Mathematics,21.0,45.5,60.0,Pass,-3.0,UCI
+U313,School A,Male,S6,1,Mathematics,19.5,38.5,94.0,Pass,-3.0,UCI
+U314,School A,Female,S6,1,Mathematics,19.5,38.5,56.0,Pass,-4.5,UCI
+U315,School A,Female,S6,1,Mathematics,22.5,45.5,72.0,Pass,-3.0,UCI
+U316,School A,Female,S6,1,Mathematics,19.5,38.5,20.0,Pass,-3.0,UCI
+U317,School A,Female,S6,1,Mathematics,12.0,0.0,100.0,Fail,0.0,UCI
+U318,School A,Female,S6,1,Mathematics,13.5,31.5,82.0,Fail,1.5,UCI
+U319,School A,Female,S5,1,Mathematics,16.5,35.0,100.0,Pass,0.0,UCI
+U320,School A,Female,S6,1,Mathematics,16.5,38.5,96.0,Pass,0.0,UCI
+U321,School A,Female,S5,1,Mathematics,19.5,45.5,54.0,Pass,0.0,UCI
+U322,School A,Female,S5,1,Mathematics,16.5,31.5,76.0,Fail,-3.0,UCI
+U323,School A,Female,S5,1,Mathematics,16.5,38.5,94.0,Pass,0.0,UCI
+U324,School A,Female,S5,1,Mathematics,18.0,52.5,98.0,Pass,3.0,UCI
+U325,School A,Female,S5,1,Mathematics,24.0,52.5,100.0,Pass,-1.5,UCI
+U326,School A,Male,S6,1,Mathematics,13.5,38.5,94.0,Pass,4.5,UCI
+U327,School A,Male,S5,1,Mathematics,21.0,56.0,94.0,Pass,1.5,UCI
+U328,School A,Male,S5,1,Mathematics,16.5,35.0,84.0,Pass,-1.5,UCI
+U329,School A,Female,S5,1,Mathematics,15.0,31.5,86.0,Fail,-1.5,UCI
+U330,School A,Female,S5,1,Mathematics,21.0,49.0,92.0,Pass,0.0,UCI
+U331,School A,Male,S6,1,Mathematics,13.5,28.0,96.0,Fail,-1.5,UCI
+U332,School A,Female,S5,1,Mathematics,18.0,49.0,86.0,Pass,3.0,UCI
+U333,School A,Female,S6,1,Mathematics,10.5,0.0,100.0,Fail,-10.5,UCI
+U334,School A,Female,S6,1,Mathematics,12.0,0.0,100.0,Fail,0.0,UCI
+U335,School A,Female,S6,1,Mathematics,15.0,0.0,100.0,Fail,-1.5,UCI
+U336,School A,Female,S5,1,Mathematics,24.0,52.5,68.0,Pass,-1.5,UCI
+U337,School A,Female,S6,1,Mathematics,21.0,45.5,76.0,Pass,-1.5,UCI
+U338,School A,Female,S5,1,Mathematics,10.5,0.0,100.0,Fail,1.5,UCI
+U339,School A,Female,S6,1,Mathematics,24.0,59.5,86.0,Pass,-1.5,UCI
+U340,School A,Female,S5,1,Mathematics,13.5,35.0,92.0,Pass,1.5,UCI
+U341,School A,Female,S6,1,Mathematics,16.5,38.5,92.0,Pass,1.5,UCI
+U342,School A,Male,S6,1,Mathematics,15.0,0.0,100.0,Fail,0.0,UCI
+U343,School A,Male,S6,1,Mathematics,24.0,52.5,78.0,Pass,-1.5,UCI
+U344,School A,Female,S5,1,Mathematics,13.5,0.0,100.0,Fail,-1.5,UCI
+U345,School A,Female,S6,1,Mathematics,16.5,35.0,92.0,Pass,-1.5,UCI
+U346,School A,Female,S6,1,Mathematics,19.5,49.0,86.0,Pass,0.0,UCI
+U347,School A,Male,S6,1,Mathematics,24.0,56.0,82.0,Pass,-1.5,UCI
+U348,School A,Male,S6,1,Mathematics,15.0,31.5,100.0,Fail,0.0,UCI
+U349,School A,Female,S5,1,Mathematics,19.5,52.5,100.0,Pass,3.0,UCI
+U350,School B,Male,S6,2,Mathematics,16.5,45.5,80.0,Pass,3.0,UCI
+U351,School B,Male,S6,2,Mathematics,12.0,28.0,84.0,Fail,-1.5,UCI
+U352,School B,Male,S5,2,Mathematics,19.5,45.5,96.0,Pass,0.0,UCI
+U353,School B,Male,S6,2,Mathematics,12.0,28.0,86.0,Fail,-1.5,UCI
+U354,School B,Male,S6,2,Mathematics,12.0,28.0,92.0,Fail,0.0,UCI
+U355,School B,Male,S5,2,Mathematics,19.5,38.5,92.0,Pass,-3.0,UCI
+U356,School B,Female,S6,2,Mathematics,15.0,31.5,100.0,Fail,-1.5,UCI
+U357,School B,Female,S5,2,Mathematics,18.0,45.5,92.0,Pass,1.5,UCI
+U358,School B,Female,S5,2,Mathematics,18.0,38.5,96.0,Pass,0.0,UCI
+U359,School B,Male,S6,2,Mathematics,15.0,35.0,92.0,Pass,0.0,UCI
+U360,School B,Female,S6,2,Mathematics,27.0,56.0,100.0,Pass,-3.0,UCI
+U361,School B,Female,S6,2,Mathematics,19.5,45.5,100.0,Pass,0.0,UCI
+U362,School B,Male,S6,2,Mathematics,19.5,42.0,96.0,Pass,-1.5,UCI
+U363,School B,Female,S6,2,Mathematics,16.5,35.0,100.0,Pass,0.0,UCI
+U364,School B,Female,S5,2,Mathematics,24.0,52.5,100.0,Pass,-1.5,UCI
+U365,School B,Female,S5,2,Mathematics,18.0,42.0,100.0,Pass,-1.5,UCI
+U366,School B,Male,S6,2,Mathematics,15.0,35.0,92.0,Pass,0.0,UCI
+U367,School B,Male,S6,2,Mathematics,19.5,45.5,100.0,Pass,0.0,UCI
+U368,School B,Female,S5,2,Mathematics,10.5,0.0,100.0,Fail,-1.5,UCI
+U369,School B,Female,S6,2,Mathematics,16.5,35.0,100.0,Pass,-1.5,UCI
+U370,School B,Female,S6,2,Mathematics,21.0,38.5,80.0,Pass,-3.0,UCI
+U371,School B,Female,S6,2,Mathematics,10.5,31.5,92.0,Fail,0.0,UCI
+U372,School B,Male,S6,2,Mathematics,21.0,42.0,94.0,Pass,-3.0,UCI
+U373,School B,Female,S5,2,Mathematics,19.5,38.5,84.0,Pass,-3.0,UCI
+U374,School B,Female,S5,2,Mathematics,9.0,17.5,72.0,Fail,-1.5,UCI
+U375,School B,Female,S6,2,Mathematics,28.5,66.5,100.0,Pass,-1.5,UCI
+U376,School B,Female,S6,2,Mathematics,12.0,35.0,96.0,Pass,0.0,UCI
+U377,School B,Female,S6,2,Mathematics,22.5,52.5,92.0,Pass,-1.5,UCI
+U378,School B,Female,S6,2,Mathematics,12.0,35.0,92.0,Pass,1.5,UCI
+U379,School B,Female,S6,2,Mathematics,22.5,52.5,100.0,Pass,0.0,UCI
+U380,School B,Female,S5,2,Mathematics,15.0,35.0,66.0,Pass,0.0,UCI
+U381,School B,Male,S6,2,Mathematics,22.5,49.0,92.0,Pass,-1.5,UCI
+U382,School B,Male,S6,2,Mathematics,10.5,24.5,90.0,Fail,-1.5,UCI
+U383,School B,Male,S5,2,Mathematics,16.5,35.0,96.0,Pass,0.0,UCI
+U384,School B,Male,S6,2,Mathematics,9.0,0.0,100.0,Fail,-1.5,UCI
+U385,School B,Male,S6,2,Mathematics,9.0,17.5,72.0,Fail,-1.5,UCI
+U386,School B,Female,S6,2,Mathematics,15.0,35.0,96.0,Pass,-1.5,UCI
+U387,School B,Female,S6,2,Mathematics,9.0,21.0,86.0,Fail,-1.5,UCI
+U388,School B,Female,S6,2,Mathematics,10.5,0.0,100.0,Fail,-3.0,UCI
+U389,School B,Female,S6,2,Mathematics,10.5,28.0,100.0,Fail,3.0,UCI
+U390,School B,Female,S6,2,Mathematics,9.0,0.0,100.0,Fail,-1.5,UCI
+U391,School B,Male,S6,2,Mathematics,13.5,31.5,78.0,Fail,0.0,UCI
+U392,School B,Male,S5,2,Mathematics,21.0,56.0,94.0,Pass,3.0,UCI
+U393,School B,Male,S6,2,Mathematics,15.0,24.5,94.0,Fail,-3.0,UCI
+U394,School B,Male,S6,2,Mathematics,16.5,35.0,100.0,Pass,1.5,UCI
+U395,School B,Male,S6,2,Mathematics,12.0,31.5,90.0,Fail,1.5,UCI
+U396,School A,Female,S6,2,English,0.0,38.5,92.0,Pass,16.5,UCI
+U397,School A,Female,S5,2,English,13.5,38.5,96.0,Pass,3.0,UCI
+U398,School A,Female,S4,2,English,18.0,42.0,88.0,Pass,1.5,UCI
+U399,School A,Female,S4,2,English,21.0,49.0,100.0,Pass,0.0,UCI
+U400,School A,Female,S4,2,English,16.5,45.5,100.0,Pass,3.0,UCI
+U401,School A,Male,S4,2,English,18.0,45.5,88.0,Pass,0.0,UCI
+U402,School A,Male,S4,2,English,19.5,45.5,100.0,Pass,-1.5,UCI
+U403,School A,Female,S5,2,English,15.0,45.5,96.0,Pass,4.5,UCI
+U404,School A,Male,S4,2,English,22.5,59.5,100.0,Pass,1.5,UCI
+U405,School A,Male,S4,2,English,18.0,45.5,100.0,Pass,0.0,UCI
+U406,School A,Female,S4,2,English,21.0,49.0,96.0,Pass,0.0,UCI
+U407,School A,Female,S4,2,English,15.0,45.5,100.0,Pass,3.0,UCI
+U408,School A,Male,S4,2,English,18.0,42.0,100.0,Pass,1.5,UCI
+U409,School A,Male,S4,2,English,18.0,45.5,100.0,Pass,0.0,UCI
+U410,School A,Male,S4,2,English,21.0,52.5,100.0,Pass,0.0,UCI
+U411,School A,Female,S4,2,English,25.5,59.5,88.0,Pass,0.0,UCI
+U412,School A,Female,S4,2,English,19.5,49.0,80.0,Pass,0.0,UCI
+U413,School A,Female,S4,2,English,19.5,49.0,96.0,Pass,1.5,UCI
+U414,School A,Male,S5,2,English,12.0,24.5,96.0,Fail,0.0,UCI
+U415,School A,Male,S4,2,English,18.0,42.0,88.0,Pass,0.0,UCI
+U416,School A,Male,S4,2,English,18.0,49.0,100.0,Pass,1.5,UCI
+U417,School A,Male,S4,2,English,16.5,42.0,100.0,Pass,1.5,UCI
+U418,School A,Male,S4,2,English,18.0,49.0,100.0,Pass,1.5,UCI
+U419,School A,Male,S4,2,English,15.0,35.0,96.0,Pass,0.0,UCI
+U420,School A,Female,S4,2,English,15.0,35.0,96.0,Pass,1.5,UCI
+U421,School A,Female,S4,2,English,15.0,42.0,88.0,Pass,1.5,UCI
+U422,School A,Male,S4,2,English,16.5,42.0,84.0,Pass,1.5,UCI
+U423,School A,Male,S4,2,English,16.5,38.5,100.0,Pass,0.0,UCI
+U424,School A,Male,S4,2,English,18.0,45.5,96.0,Pass,0.0,UCI
+U425,School A,Male,S4,2,English,18.0,42.0,92.0,Pass,-1.5,UCI
+U426,School A,Male,S4,2,English,15.0,38.5,100.0,Pass,1.5,UCI
+U427,School A,Male,S4,2,English,22.5,52.5,96.0,Pass,0.0,UCI
+U428,School A,Male,S4,2,English,19.5,52.5,100.0,Pass,1.5,UCI
+U429,School A,Male,S4,2,English,19.5,42.0,100.0,Pass,-1.5,UCI
+U430,School A,Male,S4,2,English,18.0,42.0,92.0,Pass,0.0,UCI
+U431,School A,Female,S4,2,English,16.5,38.5,92.0,Pass,0.0,UCI
+U432,School A,Male,S4,2,English,21.0,49.0,100.0,Pass,0.0,UCI
+U433,School A,Male,S4,2,English,19.5,45.5,92.0,Pass,0.0,UCI
+U434,School A,Female,S4,2,English,16.5,42.0,96.0,Pass,1.5,UCI
+U435,School A,Female,S4,2,English,21.0,42.0,84.0,Pass,-1.5,UCI
+U436,School A,Female,S4,2,English,16.5,35.0,68.0,Pass,0.0,UCI
+U437,School A,Male,S4,2,English,15.0,38.5,84.0,Pass,1.5,UCI
+U438,School A,Male,S4,2,English,21.0,52.5,100.0,Pass,1.5,UCI
+U439,School A,Male,S4,2,English,13.5,35.0,100.0,Pass,1.5,UCI
+U440,School A,Female,S4,2,English,15.0,38.5,72.0,Pass,1.5,UCI
+U441,School A,Female,S4,2,English,15.0,38.5,92.0,Pass,1.5,UCI
+U442,School A,Female,S4,2,English,19.5,45.5,88.0,Pass,-1.5,UCI
+U443,School A,Male,S4,2,English,25.5,59.5,96.0,Pass,0.0,UCI
+U444,School A,Male,S4,2,English,16.5,45.5,92.0,Pass,1.5,UCI
+U445,School A,Female,S4,2,English,19.5,42.0,96.0,Pass,-1.5,UCI
+U446,School A,Female,S4,2,English,21.0,45.5,100.0,Pass,-1.5,UCI
+U447,School A,Female,S4,2,English,24.0,56.0,100.0,Pass,-3.0,UCI
+U448,School A,Male,S4,2,English,15.0,31.5,92.0,Fail,-1.5,UCI
+U449,School A,Female,S4,2,English,19.5,42.0,100.0,Pass,-1.5,UCI
+U450,School A,Female,S4,2,English,19.5,45.5,100.0,Pass,-1.5,UCI
+U451,School A,Female,S4,2,English,18.0,42.0,96.0,Pass,1.5,UCI
+U452,School A,Female,S4,2,English,22.5,52.5,100.0,Pass,-1.5,UCI
+U453,School A,Male,S4,2,English,22.5,56.0,84.0,Pass,0.0,UCI
+U454,School A,Male,S4,2,English,21.0,49.0,100.0,Pass,-1.5,UCI
+U455,School A,Female,S4,2,English,24.0,56.0,96.0,Pass,-1.5,UCI
+U456,School A,Female,S4,2,English,25.5,56.0,100.0,Pass,-1.5,UCI
+U457,School A,Female,S4,2,English,15.0,56.0,100.0,Pass,0.0,UCI
+U458,School A,Female,S4,2,English,19.5,35.0,100.0,Pass,0.0,UCI
+U459,School A,Female,S4,2,English,21.0,45.5,100.0,Pass,-1.5,UCI
+U460,School A,Female,S4,2,English,19.5,42.0,100.0,Pass,-1.5,UCI
+U461,School A,Female,S4,2,English,24.0,56.0,96.0,Pass,-1.5,UCI
+U462,School A,Male,S4,2,English,16.5,42.0,100.0,Pass,1.5,UCI
+U463,School A,Female,S4,2,English,15.0,35.0,100.0,Pass,-1.5,UCI
+U464,School A,Female,S4,2,English,16.5,38.5,100.0,Pass,-1.5,UCI
+U465,School A,Female,S4,2,English,22.5,52.5,88.0,Pass,0.0,UCI
+U466,School A,Male,S4,2,English,19.5,38.5,96.0,Pass,-3.0,UCI
+U467,School A,Male,S4,2,English,16.5,35.0,100.0,Pass,-3.0,UCI
+U468,School A,Female,S4,2,English,19.5,38.5,96.0,Pass,-3.0,UCI
+U469,School A,Male,S4,2,English,19.5,49.0,100.0,Pass,0.0,UCI
+U470,School A,Female,S4,2,English,16.5,38.5,92.0,Pass,0.0,UCI
+U471,School A,Male,S4,2,English,16.5,38.5,100.0,Pass,0.0,UCI
+U472,School A,Male,S4,2,English,18.0,38.5,100.0,Pass,-1.5,UCI
+U473,School A,Female,S4,2,English,19.5,45.5,98.0,Pass,0.0,UCI
+U474,School A,Male,S5,2,English,13.5,35.0,100.0,Pass,0.0,UCI
+U475,School A,Female,S4,2,English,18.0,38.5,72.0,Pass,-1.5,UCI
+U476,School A,Male,S4,2,English,16.5,42.0,100.0,Pass,0.0,UCI
+U477,School A,Male,S4,2,English,15.0,31.5,96.0,Fail,-1.5,UCI
+U478,School A,Female,S4,2,English,18.0,38.5,92.0,Pass,-1.5,UCI
+U479,School A,Male,S4,2,English,19.5,45.5,96.0,Pass,-1.5,UCI
+U480,School A,Female,S4,2,English,19.5,42.0,96.0,Pass,-1.5,UCI
+U481,School A,Female,S4,2,English,18.0,42.0,92.0,Pass,-1.5,UCI
+U482,School A,Female,S4,2,English,19.5,38.5,88.0,Pass,-3.0,UCI
+U483,School A,Female,S4,2,English,22.5,52.5,92.0,Pass,0.0,UCI
+U484,School A,Male,S4,2,English,18.0,38.5,88.0,Pass,-3.0,UCI
+U485,School A,Male,S4,2,English,13.5,35.0,88.0,Pass,0.0,UCI
+U486,School A,Female,S4,2,English,13.5,38.5,96.0,Pass,3.0,UCI
+U487,School A,Female,S4,2,English,21.0,45.5,88.0,Pass,-1.5,UCI
+U488,School A,Female,S4,2,English,18.0,42.0,100.0,Pass,1.5,UCI
+U489,School A,Female,S4,2,English,19.5,49.0,96.0,Pass,1.5,UCI
+U490,School A,Male,S4,2,English,16.5,42.0,96.0,Pass,1.5,UCI
+U491,School A,Female,S4,2,English,19.5,45.5,92.0,Pass,0.0,UCI
+U492,School A,Male,S4,2,English,13.5,38.5,88.0,Pass,3.0,UCI
+U493,School A,Female,S4,2,English,19.5,42.0,100.0,Pass,-1.5,UCI
+U494,School A,Female,S4,2,English,18.0,45.5,92.0,Pass,1.5,UCI
+U495,School A,Female,S4,2,English,18.0,45.5,96.0,Pass,1.5,UCI
+U496,School A,Male,S4,2,English,13.5,28.0,76.0,Fail,0.0,UCI
+U497,School A,Male,S4,2,English,24.0,56.0,100.0,Pass,0.0,UCI
+U498,School A,Male,S4,2,English,18.0,42.0,96.0,Pass,1.5,UCI
+U499,School A,Female,S4,2,English,16.5,35.0,68.0,Pass,-1.5,UCI
+U500,School A,Male,S4,2,English,24.0,56.0,100.0,Pass,0.0,UCI
+U501,School A,Female,S4,2,English,15.0,35.0,80.0,Pass,0.0,UCI
+U502,School A,Female,S4,2,English,15.0,35.0,92.0,Pass,0.0,UCI
+U503,School A,Male,S4,2,English,19.5,49.0,92.0,Pass,1.5,UCI
+U504,School A,Male,S4,2,English,18.0,38.5,84.0,Pass,-3.0,UCI
+U505,School A,Female,S4,2,English,22.5,49.0,96.0,Pass,0.0,UCI
+U506,School A,Male,S4,2,English,19.5,49.0,92.0,Pass,1.5,UCI
+U507,School A,Female,S4,2,English,16.5,38.5,92.0,Pass,0.0,UCI
+U508,School A,Female,S4,2,English,12.0,35.0,76.0,Pass,3.0,UCI
+U509,School A,Male,S4,2,English,27.0,63.0,80.0,Pass,-1.5,UCI
+U510,School A,Male,S4,2,English,15.0,35.0,92.0,Pass,-1.5,UCI
+U511,School A,Male,S4,2,English,24.0,49.0,88.0,Pass,-3.0,UCI
+U512,School A,Male,S4,2,English,24.0,56.0,92.0,Pass,-1.5,UCI
+U513,School A,Male,S4,2,English,21.0,52.5,88.0,Pass,0.0,UCI
+U514,School A,Male,S5,2,English,18.0,38.5,72.0,Pass,-1.5,UCI
+U515,School A,Male,S4,2,English,21.0,49.0,96.0,Pass,-1.5,UCI
+U516,School A,Female,S4,2,English,21.0,49.0,100.0,Pass,0.0,UCI
+U517,School A,Male,S4,2,English,21.0,45.5,88.0,Pass,-1.5,UCI
+U518,School A,Female,S4,2,English,21.0,45.5,96.0,Pass,-3.0,UCI
+U519,School A,Male,S4,2,English,18.0,45.5,92.0,Pass,1.5,UCI
+U520,School A,Female,S4,2,English,18.0,38.5,100.0,Pass,-1.5,UCI
+U521,School A,Male,S4,2,English,13.5,31.5,96.0,Fail,0.0,UCI
+U522,School A,Female,S4,2,English,15.0,38.5,100.0,Pass,1.5,UCI
+U523,School A,Female,S6,2,English,13.5,38.5,100.0,Pass,1.5,UCI
+U524,School A,Male,S4,2,English,21.0,52.5,84.0,Pass,0.0,UCI
+U525,School A,Male,S4,2,English,19.5,45.5,92.0,Pass,-1.5,UCI
+U526,School A,Female,S4,2,English,15.0,42.0,100.0,Pass,1.5,UCI
+U527,School A,Female,S6,2,English,15.0,28.0,80.0,Fail,-1.5,UCI
+U528,School A,Female,S5,2,English,16.5,38.5,84.0,Pass,-1.5,UCI
+U529,School A,Female,S4,2,English,16.5,45.5,88.0,Pass,1.5,UCI
+U530,School A,Female,S5,2,English,19.5,42.0,96.0,Pass,-1.5,UCI
+U531,School A,Female,S4,2,English,22.5,49.0,76.0,Pass,-3.0,UCI
+U532,School A,Male,S4,2,English,13.5,38.5,92.0,Pass,0.0,UCI
+U533,School A,Female,S4,2,English,19.5,38.5,76.0,Pass,-3.0,UCI
+U534,School A,Male,S4,2,English,18.0,38.5,96.0,Pass,-1.5,UCI
+U535,School A,Female,S4,2,English,19.5,52.5,92.0,Pass,1.5,UCI
+U536,School A,Male,S5,2,English,15.0,35.0,96.0,Pass,-1.5,UCI
+U537,School A,Female,S4,2,English,21.0,45.5,100.0,Pass,-1.5,UCI
+U538,School A,Male,S6,2,English,16.5,42.0,96.0,Pass,0.0,UCI
+U539,School A,Female,S6,2,English,18.0,38.5,80.0,Pass,-1.5,UCI
+U540,School A,Female,S4,2,English,18.0,38.5,84.0,Pass,-1.5,UCI
+U541,School A,Female,S4,2,English,13.5,35.0,92.0,Pass,0.0,UCI
+U542,School A,Male,S4,2,English,15.0,35.0,100.0,Pass,0.0,UCI
+U543,School A,Female,S4,2,English,19.5,49.0,88.0,Pass,1.5,UCI
+U544,School A,Female,S4,2,English,12.0,31.5,96.0,Fail,1.5,UCI
+U545,School A,Male,S4,2,English,13.5,38.5,88.0,Pass,3.0,UCI
+U546,School A,Female,S4,2,English,13.5,31.5,52.0,Fail,-1.5,UCI
+U547,School A,Male,S4,2,English,22.5,45.5,100.0,Pass,-3.0,UCI
+U548,School A,Male,S4,2,English,18.0,38.5,92.0,Pass,-1.5,UCI
+U549,School A,Female,S4,2,English,19.5,45.5,96.0,Pass,0.0,UCI
+U550,School A,Female,S4,2,English,15.0,38.5,92.0,Pass,1.5,UCI
+U551,School A,Male,S5,2,English,13.5,21.0,56.0,Fail,-3.0,UCI
+U552,School A,Female,S4,2,English,18.0,42.0,100.0,Pass,0.0,UCI
+U553,School A,Female,S4,2,English,16.5,35.0,100.0,Pass,-1.5,UCI
+U554,School A,Female,S4,2,English,16.5,38.5,96.0,Pass,0.0,UCI
+U555,School A,Female,S4,2,English,19.5,45.5,88.0,Pass,-1.5,UCI
+U556,School A,Female,S4,2,English,16.5,38.5,88.0,Pass,0.0,UCI
+U557,School A,Male,S4,2,English,13.5,28.0,68.0,Fail,0.0,UCI
+U558,School A,Male,S4,2,English,18.0,38.5,100.0,Pass,-1.5,UCI
+U559,School A,Male,S6,2,English,16.5,0.0,100.0,Fail,-3.0,UCI
+U560,School A,Male,S4,2,English,13.5,35.0,88.0,Pass,1.5,UCI
+U561,School A,Female,S4,2,English,19.5,45.5,96.0,Pass,0.0,UCI
+U562,School A,Male,S6,2,English,16.5,38.5,88.0,Pass,-3.0,UCI
+U563,School A,Female,S5,2,English,19.5,45.5,100.0,Pass,0.0,UCI
+U564,School A,Male,S4,2,English,10.5,28.0,100.0,Fail,1.5,UCI
+U565,School A,Male,S5,2,English,13.5,35.0,72.0,Pass,-1.5,UCI
+U566,School A,Female,S6,2,English,16.5,38.5,88.0,Pass,-1.5,UCI
+U567,School A,Male,S4,2,English,18.0,38.5,92.0,Pass,-3.0,UCI
+U568,School A,Male,S4,2,English,15.0,3.5,100.0,Fail,0.0,UCI
+U569,School A,Male,S4,2,English,13.5,35.0,100.0,Pass,-1.5,UCI
+U570,School A,Male,S5,2,English,12.0,31.5,84.0,Fail,0.0,UCI
+U571,School A,Male,S5,2,English,10.5,28.0,92.0,Fail,-1.5,UCI
+U572,School A,Male,S4,2,English,12.0,35.0,96.0,Pass,1.5,UCI
+U573,School A,Male,S4,2,English,13.5,28.0,96.0,Fail,-1.5,UCI
+U574,School A,Male,S5,2,English,12.0,28.0,100.0,Fail,0.0,UCI
+U575,School A,Male,S5,2,English,12.0,28.0,80.0,Fail,-1.5,UCI
+U576,School A,Male,S4,2,English,13.5,38.5,100.0,Pass,1.5,UCI
+U577,School A,Female,S4,2,English,25.5,63.0,100.0,Pass,0.0,UCI
+U578,School A,Female,S4,2,English,18.0,45.5,100.0,Pass,0.0,UCI
+U579,School A,Female,S4,2,English,24.0,59.5,100.0,Pass,0.0,UCI
+U580,School A,Male,S4,2,English,13.5,35.0,92.0,Pass,0.0,UCI
+U581,School A,Male,S4,2,English,24.0,63.0,100.0,Pass,1.5,UCI
+U582,School A,Male,S5,2,English,16.5,35.0,100.0,Pass,-3.0,UCI
+U583,School A,Female,S4,2,English,21.0,45.5,100.0,Pass,-1.5,UCI
+U584,School A,Female,S4,2,English,21.0,52.5,100.0,Pass,0.0,UCI
+U585,School A,Male,S5,2,English,15.0,38.5,100.0,Pass,1.5,UCI
+U586,School A,Female,S4,2,English,19.5,49.0,100.0,Pass,-1.5,UCI
+U587,School A,Male,S5,2,English,16.5,35.0,92.0,Pass,-3.0,UCI
+U588,School A,Male,S4,2,English,15.0,38.5,84.0,Pass,-1.5,UCI
+U589,School A,Male,S5,2,English,16.5,45.5,92.0,Pass,0.0,UCI
+U590,School A,Male,S4,2,English,16.5,38.5,92.0,Pass,-1.5,UCI
+U591,School A,Male,S4,2,English,16.5,45.5,100.0,Pass,1.5,UCI
+U592,School A,Female,S5,2,English,25.5,59.5,100.0,Pass,1.5,UCI
+U593,School A,Female,S5,2,English,21.0,49.0,36.0,Pass,-1.5,UCI
+U594,School A,Female,S4,2,English,21.0,56.0,84.0,Pass,1.5,UCI
+U595,School A,Male,S5,2,English,16.5,49.0,88.0,Pass,3.0,UCI
+U596,School A,Male,S4,2,English,15.0,38.5,100.0,Pass,-1.5,UCI
+U597,School A,Male,S4,2,English,19.5,56.0,100.0,Pass,1.5,UCI
+U598,School A,Female,S5,2,English,18.0,49.0,80.0,Pass,1.5,UCI
+U599,School A,Male,S5,2,English,13.5,35.0,88.0,Pass,0.0,UCI
+U600,School A,Female,S4,2,English,18.0,45.5,88.0,Pass,0.0,UCI
+U601,School A,Female,S5,2,English,18.0,42.0,100.0,Pass,-1.5,UCI
+U602,School A,Male,S5,2,English,15.0,42.0,68.0,Pass,1.5,UCI
+U603,School A,Male,S4,2,English,16.5,35.0,100.0,Pass,-1.5,UCI
+U604,School A,Male,S4,2,English,19.5,42.0,100.0,Pass,-1.5,UCI
+U605,School A,Female,S5,2,English,21.0,56.0,84.0,Pass,1.5,UCI
+U606,School A,Male,S5,2,English,19.5,49.0,92.0,Pass,0.0,UCI
+U607,School A,Male,S4,2,English,15.0,42.0,68.0,Pass,1.5,UCI
+U608,School A,Female,S5,2,English,21.0,56.0,40.0,Pass,1.5,UCI
+U609,School A,Female,S4,2,English,16.5,38.5,100.0,Pass,-1.5,UCI
+U610,School A,Female,S4,2,English,21.0,52.5,96.0,Pass,0.0,UCI
+U611,School A,Female,S4,2,English,16.5,42.0,92.0,Pass,1.5,UCI
+U612,School A,Female,S5,2,English,21.0,52.5,100.0,Pass,1.5,UCI
+U613,School A,Female,S5,2,English,19.5,45.5,58.0,Pass,0.0,UCI
+U614,School A,Female,S4,2,English,19.5,45.5,88.0,Pass,0.0,UCI
+U615,School A,Female,S5,2,English,12.0,28.0,72.0,Fail,1.5,UCI
+U616,School A,Female,S4,2,English,16.5,42.0,96.0,Pass,0.0,UCI
+U617,School A,Female,S4,2,English,21.0,52.5,92.0,Pass,1.5,UCI
+U618,School A,Female,S4,2,English,18.0,45.5,96.0,Pass,1.5,UCI
+U619,School A,Female,S5,2,English,16.5,42.0,100.0,Pass,1.5,UCI
+U620,School A,Female,S6,2,English,18.0,42.0,92.0,Pass,0.0,UCI
+U621,School A,Male,S5,2,English,19.5,42.0,70.0,Pass,-1.5,UCI
+U622,School A,Female,S4,2,English,19.5,45.5,100.0,Pass,0.0,UCI
+U623,School A,Male,S6,2,English,18.0,38.5,80.0,Pass,-1.5,UCI
+U624,School A,Female,S5,2,English,18.0,38.5,88.0,Pass,-1.5,UCI
+U625,School A,Female,S5,2,English,21.0,52.5,96.0,Pass,3.0,UCI
+U626,School A,Female,S5,2,English,16.5,35.0,68.0,Pass,-3.0,UCI
+U627,School A,Male,S6,2,English,15.0,35.0,80.0,Pass,0.0,UCI
+U628,School A,Female,S5,2,English,18.0,45.5,92.0,Pass,1.5,UCI
+U629,School A,Female,S5,2,English,18.0,45.5,100.0,Pass,0.0,UCI
+U630,School A,Female,S5,2,English,16.5,38.5,100.0,Pass,-1.5,UCI
+U631,School A,Female,S5,2,English,18.0,42.0,76.0,Pass,0.0,UCI
+U632,School A,Female,S4,2,English,19.5,49.0,100.0,Pass,0.0,UCI
+U633,School A,Male,S6,2,English,15.0,35.0,82.0,Pass,-1.5,UCI
+U634,School A,Female,S4,2,English,22.5,56.0,92.0,Pass,1.5,UCI
+U635,School A,Female,S6,2,English,12.0,28.0,92.0,Fail,0.0,UCI
+U636,School A,Female,S5,2,English,25.5,59.5,96.0,Pass,1.5,UCI
+U637,School A,Male,S5,2,English,15.0,38.5,100.0,Pass,1.5,UCI
+U638,School A,Male,S6,2,English,13.5,38.5,96.0,Pass,1.5,UCI
+U639,School A,Female,S5,2,English,22.5,56.0,100.0,Pass,0.0,UCI
+U640,School A,Female,S5,2,English,21.0,42.0,100.0,Pass,-3.0,UCI
+U641,School A,Male,S5,2,English,18.0,45.5,100.0,Pass,1.5,UCI
+U642,School A,Male,S5,2,English,19.5,45.5,100.0,Pass,0.0,UCI
+U643,School A,Male,S4,2,English,19.5,49.0,100.0,Pass,0.0,UCI
+U644,School A,Male,S4,2,English,13.5,31.5,96.0,Fail,0.0,UCI
+U645,School A,Male,S4,2,English,18.0,42.0,100.0,Pass,0.0,UCI
+U646,School A,Male,S5,2,English,24.0,56.0,100.0,Pass,0.0,UCI
+U647,School A,Female,S4,2,English,13.5,35.0,92.0,Pass,1.5,UCI
+U648,School A,Female,S4,2,English,21.0,45.5,100.0,Pass,-1.5,UCI
+U649,School A,Female,S6,2,English,15.0,35.0,64.0,Pass,0.0,UCI
+U650,School A,Female,S6,2,English,13.5,35.0,68.0,Pass,-1.5,UCI
+U651,School A,Female,S6,2,English,12.0,24.5,72.0,Fail,-1.5,UCI
+U652,School A,Male,S6,2,English,10.5,28.0,48.0,Fail,1.5,UCI
+U653,School A,Male,S5,2,English,15.0,31.5,88.0,Fail,-3.0,UCI
+U654,School A,Female,S5,2,English,21.0,52.5,92.0,Pass,0.0,UCI
+U655,School A,Female,S5,2,English,16.5,35.0,80.0,Pass,-1.5,UCI
+U656,School A,Female,S4,2,English,18.0,38.5,92.0,Pass,-1.5,UCI
+U657,School A,Female,S5,2,English,19.5,45.5,96.0,Pass,0.0,UCI
+U658,School A,Female,S5,2,English,13.5,28.0,72.0,Fail,0.0,UCI
+U659,School A,Male,S6,2,English,12.0,28.0,68.0,Fail,-1.5,UCI
+U660,School A,Female,S5,2,English,16.5,35.0,84.0,Pass,-3.0,UCI
+U661,School A,Female,S5,2,English,22.5,52.5,92.0,Pass,-1.5,UCI
+U662,School A,Female,S5,2,English,22.5,49.0,92.0,Pass,-1.5,UCI
+U663,School A,Male,S5,2,English,22.5,52.5,84.0,Pass,0.0,UCI
+U664,School A,Male,S5,2,English,18.0,42.0,100.0,Pass,0.0,UCI
+U665,School A,Male,S4,2,English,21.0,52.5,86.0,Pass,0.0,UCI
+U666,School A,Male,S4,2,English,21.0,52.5,92.0,Pass,1.5,UCI
+U667,School A,Female,S5,2,English,16.5,42.0,96.0,Pass,0.0,UCI
+U668,School A,Male,S5,2,English,19.5,52.5,96.0,Pass,1.5,UCI
+U669,School A,Female,S5,2,English,16.5,38.5,80.0,Pass,0.0,UCI
+U670,School A,Female,S5,2,English,15.0,35.0,80.0,Pass,-1.5,UCI
+U671,School A,Female,S6,2,English,18.0,38.5,80.0,Pass,-3.0,UCI
+U672,School A,Male,S4,2,English,22.5,56.0,86.0,Pass,1.5,UCI
+U673,School A,Female,S5,2,English,16.5,38.5,92.0,Pass,-1.5,UCI
+U674,School A,Male,S5,2,English,13.5,45.5,96.0,Pass,4.5,UCI
+U675,School A,Male,S6,2,English,10.5,17.5,76.0,Fail,1.5,UCI
+U676,School A,Male,S6,2,English,15.0,35.0,84.0,Pass,-1.5,UCI
+U677,School A,Male,S4,2,English,16.5,38.5,100.0,Pass,1.5,UCI
+U678,School A,Male,S6,2,English,10.5,24.5,84.0,Fail,1.5,UCI
+U679,School A,Male,S4,2,English,13.5,35.0,92.0,Pass,3.0,UCI
+U680,School A,Male,S6,2,English,10.5,21.0,92.0,Fail,1.5,UCI
+U681,School A,Male,S4,2,English,21.0,42.0,96.0,Pass,-1.5,UCI
+U682,School A,Male,S5,2,English,18.0,45.5,100.0,Pass,0.0,UCI
+U683,School A,Male,S5,2,English,13.5,35.0,100.0,Pass,1.5,UCI
+U684,School A,Female,S6,2,English,18.0,45.5,96.0,Pass,0.0,UCI
+U685,School A,Female,S5,2,English,21.0,59.5,96.0,Pass,1.5,UCI
+U686,School A,Female,S6,2,English,15.0,38.5,100.0,Pass,0.0,UCI
+U687,School A,Male,S6,2,English,16.5,38.5,92.0,Pass,-1.5,UCI
+U688,School A,Female,S5,2,English,16.5,49.0,96.0,Pass,1.5,UCI
+U689,School A,Female,S6,2,English,16.5,49.0,92.0,Pass,1.5,UCI
+U690,School A,Female,S6,2,English,16.5,45.5,92.0,Pass,0.0,UCI
+U691,School A,Male,S6,2,English,16.5,49.0,92.0,Pass,3.0,UCI
+U692,School A,Male,S6,2,English,24.0,56.0,96.0,Pass,0.0,UCI
+U693,School A,Male,S5,2,English,13.5,35.0,100.0,Pass,1.5,UCI
+U694,School A,Female,S5,2,English,15.0,42.0,96.0,Pass,1.5,UCI
+U695,School A,Female,S6,2,English,15.0,42.0,84.0,Pass,3.0,UCI
+U696,School A,Female,S6,2,English,22.5,52.5,96.0,Pass,0.0,UCI
+U697,School A,Male,S6,2,English,15.0,38.5,96.0,Pass,0.0,UCI
+U698,School A,Male,S6,2,English,15.0,42.0,96.0,Pass,1.5,UCI
+U699,School A,Female,S5,3,English,22.5,45.5,96.0,Pass,-4.5,UCI
+U700,School A,Female,S6,3,English,16.5,45.5,100.0,Pass,1.5,UCI
+U701,School A,Male,S5,3,English,12.0,31.5,84.0,Fail,0.0,UCI
+U702,School A,Male,S6,3,English,22.5,56.0,88.0,Pass,1.5,UCI
+U703,School A,Male,S5,3,English,16.5,49.0,100.0,Pass,0.0,UCI
+U704,School A,Female,S6,3,English,15.0,42.0,84.0,Pass,1.5,UCI
+U705,School A,Male,S6,3,English,15.0,49.0,92.0,Pass,3.0,UCI
+U706,School A,Female,S6,3,English,12.0,35.0,76.0,Pass,1.5,UCI
+U707,School A,Female,S6,3,English,16.5,42.0,68.0,Pass,1.5,UCI
+U708,School A,Female,S6,3,English,24.0,56.0,80.0,Pass,0.0,UCI
+U709,School A,Female,S6,3,English,19.5,45.5,96.0,Pass,0.0,UCI
+U710,School A,Male,S5,3,English,24.0,63.0,96.0,Pass,1.5,UCI
+U711,School A,Female,S6,3,English,21.0,52.5,84.0,Pass,0.0,UCI
+U712,School A,Female,S5,3,English,22.5,56.0,88.0,Pass,1.5,UCI
+U713,School A,Female,S5,3,English,18.0,42.0,88.0,Pass,0.0,UCI
+U714,School A,Female,S6,3,English,18.0,35.0,70.0,Pass,-4.5,UCI
+U715,School A,Male,S6,3,English,16.5,42.0,88.0,Pass,1.5,UCI
+U716,School A,Female,S6,3,English,21.0,45.5,96.0,Pass,-3.0,UCI
+U717,School A,Female,S5,3,English,19.5,52.5,84.0,Pass,3.0,UCI
+U718,School A,Female,S6,3,English,13.5,35.0,100.0,Pass,-1.5,UCI
+U719,School A,Male,S6,3,English,15.0,35.0,100.0,Pass,0.0,UCI
+U720,School A,Male,S6,3,English,15.0,38.5,80.0,Pass,0.0,UCI
+U721,School A,Male,S5,3,English,16.5,35.0,56.0,Pass,0.0,UCI
+U722,School A,Male,S5,3,English,19.5,45.5,64.0,Pass,0.0,UCI
+U723,School A,Female,S6,3,English,25.5,63.0,96.0,Pass,0.0,UCI
+U724,School A,Female,S6,3,English,18.0,45.5,100.0,Pass,1.5,UCI
+U725,School A,Female,S5,3,English,18.0,49.0,76.0,Pass,0.0,UCI
+U726,School A,Female,S6,3,English,18.0,49.0,80.0,Pass,1.5,UCI
+U727,School A,Male,S5,3,English,18.0,42.0,100.0,Pass,0.0,UCI
+U728,School A,Female,S6,3,English,27.0,63.0,100.0,Pass,0.0,UCI
+U729,School A,Female,S5,3,English,19.5,49.0,100.0,Pass,0.0,UCI
+U730,School A,Male,S6,3,English,21.0,52.5,100.0,Pass,1.5,UCI
+U731,School A,Male,S6,3,English,25.5,59.5,100.0,Pass,0.0,UCI
+U732,School A,Male,S6,3,English,22.5,56.0,96.0,Pass,1.5,UCI
+U733,School A,Female,S5,3,English,25.5,63.0,100.0,Pass,1.5,UCI
+U734,School A,Female,S5,3,English,27.0,66.5,100.0,Pass,1.5,UCI
+U735,School A,Male,S6,3,English,21.0,52.5,100.0,Pass,1.5,UCI
+U736,School A,Male,S5,3,English,21.0,52.5,100.0,Pass,1.5,UCI
+U737,School A,Female,S6,3,English,21.0,45.5,96.0,Pass,-1.5,UCI
+U738,School A,Female,S6,3,English,19.5,49.0,100.0,Pass,1.5,UCI
+U739,School A,Female,S6,3,English,24.0,59.5,100.0,Pass,1.5,UCI
+U740,School A,Male,S6,3,English,27.0,59.5,100.0,Pass,0.0,UCI
+U741,School A,Female,S6,3,English,21.0,52.5,100.0,Pass,1.5,UCI
+U742,School A,Male,S5,3,English,18.0,45.5,100.0,Pass,1.5,UCI
+U743,School A,Female,S5,3,English,10.5,28.0,100.0,Fail,0.0,UCI
+U744,School A,Female,S5,3,English,24.0,56.0,100.0,Pass,0.0,UCI
+U745,School A,Female,S5,3,English,27.0,63.0,100.0,Pass,0.0,UCI
+U746,School A,Male,S6,3,English,13.5,38.5,100.0,Pass,1.5,UCI
+U747,School A,Male,S6,3,English,21.0,52.5,100.0,Pass,1.5,UCI
+U748,School A,Male,S6,3,English,15.0,38.5,100.0,Pass,0.0,UCI
+U749,School A,Female,S6,3,English,15.0,38.5,96.0,Pass,0.0,UCI
+U750,School A,Female,S6,3,English,18.0,52.5,96.0,Pass,0.0,UCI
+U751,School A,Female,S5,3,English,16.5,49.0,96.0,Pass,1.5,UCI
+U752,School A,Female,S5,3,English,22.5,59.5,96.0,Pass,1.5,UCI
+U753,School A,Female,S6,3,English,21.0,59.5,96.0,Pass,1.5,UCI
+U754,School A,Female,S6,3,English,18.0,52.5,84.0,Pass,0.0,UCI
+U755,School A,Female,S5,3,English,22.5,59.5,96.0,Pass,0.0,UCI
+U756,School A,Female,S6,3,English,16.5,49.0,84.0,Pass,1.5,UCI
+U757,School A,Male,S6,3,English,16.5,35.0,82.0,Pass,-1.5,UCI
+U758,School A,Female,S6,3,English,18.0,45.5,100.0,Pass,-1.5,UCI
+U759,School A,Female,S6,3,English,16.5,49.0,92.0,Pass,1.5,UCI
+U760,School A,Female,S5,3,English,21.0,59.5,96.0,Pass,1.5,UCI
+U761,School A,Female,S5,3,English,22.5,59.5,72.0,Pass,-1.5,UCI
+U762,School A,Female,S5,3,English,18.0,45.5,100.0,Pass,0.0,UCI
+U763,School A,Female,S5,3,English,16.5,49.0,96.0,Pass,1.5,UCI
+U764,School A,Male,S6,3,English,12.0,38.5,96.0,Pass,1.5,UCI
+U765,School A,Female,S6,3,English,15.0,38.5,76.0,Pass,0.0,UCI
+U766,School A,Female,S6,3,English,12.0,31.5,96.0,Fail,0.0,UCI
+U767,School A,Female,S6,3,English,15.0,35.0,96.0,Pass,0.0,UCI
+U768,School A,Female,S5,3,English,21.0,45.5,92.0,Pass,-1.5,UCI
+U769,School A,Female,S5,3,English,16.5,35.0,100.0,Pass,0.0,UCI
+U770,School A,Female,S5,3,English,25.5,59.5,100.0,Pass,1.5,UCI
+U771,School A,Female,S5,3,English,21.0,52.5,100.0,Pass,0.0,UCI
+U772,School A,Female,S6,3,English,21.0,49.0,100.0,Pass,0.0,UCI
+U773,School A,Male,S6,3,English,19.5,45.5,100.0,Pass,1.5,UCI
+U774,School A,Male,S5,3,English,25.5,59.5,100.0,Pass,1.5,UCI
+U775,School A,Male,S5,3,English,16.5,35.0,96.0,Pass,-1.5,UCI
+U776,School A,Female,S5,3,English,19.5,45.5,100.0,Pass,-1.5,UCI
+U777,School A,Female,S5,3,English,22.5,52.5,92.0,Pass,-1.5,UCI
+U778,School A,Female,S5,3,English,16.5,38.5,96.0,Pass,1.5,UCI
+U779,School A,Male,S6,3,English,16.5,42.0,100.0,Pass,0.0,UCI
+U780,School A,Male,S6,3,English,16.5,35.0,100.0,Pass,-1.5,UCI
+U781,School A,Female,S6,3,English,15.0,35.0,96.0,Pass,-1.5,UCI
+U782,School A,Female,S5,3,English,22.5,52.5,100.0,Pass,0.0,UCI
+U783,School A,Male,S6,3,English,22.5,52.5,88.0,Pass,-1.5,UCI
+U784,School A,Female,S6,3,English,15.0,42.0,84.0,Pass,1.5,UCI
+U785,School A,Female,S6,3,English,15.0,42.0,100.0,Pass,-1.5,UCI
+U786,School A,Female,S6,3,English,21.0,49.0,88.0,Pass,-1.5,UCI
+U787,School A,Female,S5,3,English,16.5,49.0,84.0,Pass,3.0,UCI
+U788,School A,Female,S5,3,English,18.0,52.5,100.0,Pass,1.5,UCI
+U789,School A,Female,S6,3,English,21.0,52.5,92.0,Pass,0.0,UCI
+U790,School A,Female,S5,3,English,21.0,56.0,100.0,Pass,0.0,UCI
+U791,School A,Male,S6,3,English,18.0,45.5,100.0,Pass,0.0,UCI
+U792,School A,Male,S6,3,English,24.0,59.5,88.0,Pass,0.0,UCI
+U793,School A,Female,S5,3,English,15.0,49.0,64.0,Pass,3.0,UCI
+U794,School A,Female,S6,3,English,16.5,49.0,100.0,Pass,1.5,UCI
+U795,School A,Female,S6,3,English,21.0,59.5,92.0,Pass,3.0,UCI
+U796,School A,Male,S6,3,English,22.5,59.5,92.0,Pass,-1.5,UCI
+U797,School A,Male,S6,3,English,21.0,49.0,100.0,Pass,-1.5,UCI
+U798,School A,Female,S5,3,English,16.5,45.5,100.0,Pass,1.5,UCI
+U799,School A,Female,S5,3,English,18.0,52.5,80.0,Pass,4.5,UCI
+U800,School A,Female,S5,3,English,18.0,56.0,92.0,Pass,6.0,UCI
+U801,School A,Female,S6,3,English,15.0,38.5,68.0,Pass,1.5,UCI
+U802,School A,Female,S5,3,English,15.0,45.5,88.0,Pass,4.5,UCI
+U803,School A,Female,S6,3,English,13.5,42.0,100.0,Pass,4.5,UCI
+U804,School A,Male,S6,3,English,13.5,42.0,78.0,Pass,3.0,UCI
+U805,School A,Male,S6,3,English,19.5,52.5,82.0,Pass,1.5,UCI
+U806,School A,Female,S5,3,English,19.5,59.5,100.0,Pass,6.0,UCI
+U807,School A,Male,S5,3,English,18.0,52.5,96.0,Pass,4.5,UCI
+U808,School A,Female,S6,3,English,21.0,59.5,100.0,Pass,4.5,UCI
+U809,School A,Male,S6,3,English,13.5,35.0,58.0,Pass,1.5,UCI
+U810,School A,Female,S6,3,English,16.5,52.5,84.0,Pass,6.0,UCI
+U811,School A,Female,S6,3,English,13.5,38.5,90.0,Pass,1.5,UCI
+U812,School A,Male,S5,3,English,24.0,63.0,80.0,Pass,3.0,UCI
+U813,School A,Female,S6,3,English,21.0,59.5,90.0,Pass,4.5,UCI
+U814,School A,Male,S6,3,English,19.5,49.0,74.0,Pass,1.5,UCI
+U815,School A,Male,S6,3,English,10.5,38.5,80.0,Pass,6.0,UCI
+U816,School A,Female,S6,3,English,21.0,59.5,80.0,Pass,4.5,UCI
+U817,School A,Female,S6,3,English,12.0,35.0,90.0,Pass,3.0,UCI
+U818,School A,Female,S6,3,English,15.0,45.5,92.0,Pass,4.5,UCI
+U819,School B,Female,S4,3,English,15.0,38.5,78.0,Pass,1.5,UCI
+U820,School B,Female,S4,3,English,18.0,42.0,100.0,Pass,0.0,UCI
+U821,School B,Female,S4,3,English,15.0,35.0,88.0,Pass,0.0,UCI
+U822,School B,Female,S4,3,English,15.0,38.5,92.0,Pass,0.0,UCI
+U823,School B,Female,S4,3,English,24.0,59.5,100.0,Pass,1.5,UCI
+U824,School B,Female,S4,3,English,9.0,31.5,100.0,Fail,3.0,UCI
+U825,School B,Male,S4,3,English,15.0,38.5,90.0,Pass,1.5,UCI
+U826,School B,Male,S4,3,English,15.0,38.5,100.0,Pass,1.5,UCI
+U827,School B,Female,S5,3,English,15.0,35.0,100.0,Pass,0.0,UCI
+U828,School B,Female,S5,3,English,9.0,24.5,100.0,Fail,0.0,UCI
+U829,School B,Female,S4,3,English,19.5,49.0,100.0,Pass,1.5,UCI
+U830,School B,Female,S4,3,English,15.0,38.5,92.0,Pass,-1.5,UCI
+U831,School B,Female,S4,3,English,15.0,35.0,100.0,Pass,0.0,UCI
+U832,School B,Female,S4,3,English,9.0,28.0,92.0,Fail,1.5,UCI
+U833,School B,Female,S4,3,English,18.0,42.0,100.0,Pass,-1.5,UCI
+U834,School B,Female,S5,3,English,15.0,42.0,96.0,Pass,1.5,UCI
+U835,School B,Female,S4,3,English,21.0,56.0,100.0,Pass,3.0,UCI
+U836,School B,Male,S4,3,English,10.5,0.0,100.0,Fail,-10.5,UCI
+U837,School B,Male,S5,3,English,12.0,31.5,92.0,Fail,1.5,UCI
+U838,School B,Male,S4,3,English,18.0,49.0,100.0,Pass,1.5,UCI
+U839,School B,Male,S4,3,English,10.5,28.0,86.0,Fail,3.0,UCI
+U840,School B,Male,S4,3,English,13.5,38.5,92.0,Pass,1.5,UCI
+U841,School B,Male,S4,3,English,10.5,31.5,84.0,Fail,3.0,UCI
+U842,School B,Male,S4,3,English,16.5,38.5,100.0,Pass,0.0,UCI
+U843,School B,Male,S5,3,English,12.0,31.5,84.0,Fail,3.0,UCI
+U844,School B,Female,S4,3,English,24.0,59.5,88.0,Pass,0.0,UCI
+U845,School B,Female,S4,3,English,16.5,45.5,94.0,Pass,3.0,UCI
+U846,School B,Female,S4,3,English,22.5,52.5,96.0,Pass,0.0,UCI
+U847,School B,Male,S4,3,English,15.0,38.5,100.0,Pass,1.5,UCI
+U848,School B,Female,S4,3,English,13.5,38.5,92.0,Pass,1.5,UCI
+U849,School B,Female,S4,3,English,15.0,28.0,100.0,Fail,-3.0,UCI
+U850,School B,Female,S4,3,English,13.5,28.0,94.0,Fail,-1.5,UCI
+U851,School B,Female,S4,3,English,13.5,31.5,100.0,Fail,1.5,UCI
+U852,School B,Female,S4,3,English,19.5,52.5,100.0,Pass,1.5,UCI
+U853,School B,Male,S5,3,English,15.0,38.5,92.0,Pass,1.5,UCI
+U854,School B,Female,S4,3,English,19.5,45.5,100.0,Pass,-4.5,UCI
+U855,School B,Female,S4,3,English,15.0,35.0,96.0,Pass,-1.5,UCI
+U856,School B,Female,S4,3,English,16.5,38.5,98.0,Pass,-1.5,UCI
+U857,School B,Female,S4,3,English,19.5,49.0,100.0,Pass,-1.5,UCI
+U858,School B,Female,S4,3,English,19.5,49.0,100.0,Pass,1.5,UCI
+U859,School B,Female,S4,3,English,21.0,42.0,96.0,Pass,-4.5,UCI
+U860,School B,Male,S4,3,English,16.5,38.5,88.0,Pass,0.0,UCI
+U861,School B,Female,S6,3,English,13.5,28.0,82.0,Fail,-1.5,UCI
+U862,School B,Male,S4,3,English,15.0,38.5,100.0,Pass,-1.5,UCI
+U863,School B,Female,S4,3,English,21.0,49.0,98.0,Pass,-1.5,UCI
+U864,School B,Male,S4,3,English,19.5,45.5,98.0,Pass,-1.5,UCI
+U865,School B,Male,S4,3,English,19.5,45.5,100.0,Pass,-1.5,UCI
+U866,School B,Female,S4,3,English,19.5,42.0,92.0,Pass,-1.5,UCI
+U867,School B,Female,S4,3,English,18.0,42.0,96.0,Pass,-1.5,UCI
+U868,School B,Female,S4,3,English,21.0,56.0,100.0,Pass,0.0,UCI
+U869,School B,Male,S4,3,English,15.0,35.0,92.0,Pass,-3.0,UCI
+U870,School B,Male,S4,3,English,15.0,38.5,96.0,Pass,1.5,UCI
+U871,School B,Female,S4,3,English,18.0,49.0,100.0,Pass,1.5,UCI
+U872,School B,Female,S4,3,English,15.0,28.0,96.0,Fail,-3.0,UCI
+U873,School B,Male,S4,3,English,18.0,38.5,78.0,Pass,-3.0,UCI
+U874,School B,Female,S4,3,English,10.5,28.0,100.0,Fail,0.0,UCI
+U875,School B,Female,S5,3,English,13.5,35.0,92.0,Pass,0.0,UCI
+U876,School B,Female,S6,3,English,13.5,35.0,100.0,Pass,0.0,UCI
+U877,School B,Female,S5,3,English,13.5,38.5,96.0,Pass,1.5,UCI
+U878,School B,Female,S4,3,English,13.5,31.5,100.0,Fail,1.5,UCI
+U879,School B,Female,S4,3,English,13.5,38.5,98.0,Pass,1.5,UCI
+U880,School B,Female,S4,3,English,10.5,28.0,88.0,Fail,0.0,UCI
+U881,School B,Female,S5,3,English,16.5,38.5,100.0,Pass,-1.5,UCI
+U882,School B,Female,S4,3,English,13.5,35.0,98.0,Pass,1.5,UCI
+U883,School B,Female,S6,3,English,10.5,35.0,88.0,Pass,3.0,UCI
+U884,School B,Female,S6,3,English,10.5,31.5,88.0,Fail,3.0,UCI
+U885,School B,Male,S6,3,English,12.0,35.0,100.0,Pass,1.5,UCI
+U886,School B,Female,S6,3,English,13.5,35.0,92.0,Pass,3.0,UCI
+U887,School B,Female,S6,3,English,10.5,31.5,76.0,Fail,1.5,UCI
+U888,School B,Female,S4,3,English,12.0,35.0,96.0,Pass,3.0,UCI
+U889,School B,Female,S5,3,English,13.5,35.0,90.0,Pass,0.0,UCI
+U890,School B,Female,S4,3,English,12.0,31.5,100.0,Fail,1.5,UCI
+U891,School B,Female,S4,3,English,21.0,45.5,100.0,Pass,-1.5,UCI
+U892,School B,Female,S4,3,English,21.0,49.0,96.0,Pass,0.0,UCI
+U893,School B,Male,S5,3,English,15.0,35.0,100.0,Pass,1.5,UCI
+U894,School B,Female,S4,3,English,21.0,49.0,100.0,Pass,-1.5,UCI
+U895,School B,Female,S4,3,English,25.5,56.0,100.0,Pass,-1.5,UCI
+U896,School B,Male,S5,3,English,9.0,24.5,76.0,Fail,1.5,UCI
+U897,School B,Male,S4,3,English,21.0,45.5,84.0,Pass,-3.0,UCI
+U898,School B,Male,S5,3,English,15.0,31.5,96.0,Fail,-3.0,UCI
+U899,School B,Female,S4,3,English,21.0,49.0,100.0,Pass,0.0,UCI
+U900,School B,Female,S6,3,English,18.0,45.5,100.0,Pass,1.5,UCI
+U901,School B,Female,S5,3,English,16.5,38.5,100.0,Pass,0.0,UCI
+U902,School B,Female,S6,3,English,16.5,35.0,84.0,Pass,-3.0,UCI
+U903,School B,Female,S5,3,English,16.5,35.0,100.0,Pass,0.0,UCI
+U904,School B,Male,S5,3,English,15.0,31.5,100.0,Fail,-1.5,UCI
+U905,School B,Female,S4,3,English,24.0,63.0,100.0,Pass,1.5,UCI
+U906,School B,Female,S5,3,English,22.5,59.5,100.0,Pass,3.0,UCI
+U907,School B,Female,S5,3,English,16.5,35.0,98.0,Pass,-3.0,UCI
+U908,School B,Female,S6,3,English,10.5,24.5,82.0,Fail,0.0,UCI
+U909,School B,Female,S4,3,English,12.0,28.0,100.0,Fail,-3.0,UCI
+U910,School B,Female,S4,3,English,10.5,24.5,96.0,Fail,-1.5,UCI
+U911,School B,Female,S6,3,English,13.5,35.0,84.0,Pass,-1.5,UCI
+U912,School B,Female,S4,3,English,21.0,56.0,100.0,Pass,3.0,UCI
+U913,School B,Female,S4,3,English,21.0,52.5,100.0,Pass,0.0,UCI
+U914,School B,Female,S6,3,English,12.0,28.0,84.0,Fail,-4.5,UCI
+U915,School B,Male,S4,3,English,12.0,0.0,100.0,Fail,-1.5,UCI
+U916,School B,Female,S4,3,English,9.0,28.0,88.0,Fail,3.0,UCI
+U917,School B,Female,S4,3,English,12.0,35.0,100.0,Pass,3.0,UCI
+U918,School B,Female,S4,3,English,12.0,28.0,92.0,Fail,0.0,UCI
+U919,School B,Male,S6,3,English,7.5,21.0,96.0,Fail,1.5,UCI
+U920,School B,Female,S4,3,English,10.5,28.0,96.0,Fail,3.0,UCI
+U921,School B,Male,S5,3,English,22.5,56.0,100.0,Pass,-1.5,UCI
+U922,School B,Female,S5,3,English,19.5,49.0,98.0,Pass,1.5,UCI
+U923,School B,Male,S4,3,English,15.0,35.0,100.0,Pass,-1.5,UCI
+U924,School B,Female,S5,3,English,13.5,31.5,90.0,Fail,0.0,UCI
+U925,School B,Female,S4,3,English,16.5,38.5,98.0,Pass,0.0,UCI
+U926,School B,Male,S5,3,English,10.5,31.5,84.0,Fail,4.5,UCI
+U927,School B,Male,S5,3,English,15.0,35.0,100.0,Pass,0.0,UCI
+U928,School B,Male,S4,3,English,13.5,28.0,96.0,Fail,-3.0,UCI
+U929,School B,Female,S4,3,English,21.0,56.0,100.0,Pass,1.5,UCI
+U930,School B,Male,S4,3,English,16.5,42.0,100.0,Pass,1.5,UCI
+U931,School B,Male,S4,3,English,13.5,35.0,78.0,Pass,3.0,UCI
+U932,School B,Male,S4,3,English,19.5,49.0,84.0,Pass,1.5,UCI
+U933,School B,Male,S4,3,English,18.0,42.0,78.0,Pass,1.5,UCI
+U934,School B,Female,S4,3,English,16.5,38.5,96.0,Pass,0.0,UCI
+U935,School B,Female,S4,3,English,13.5,35.0,84.0,Pass,1.5,UCI
+U936,School B,Female,S5,3,English,13.5,38.5,90.0,Pass,3.0,UCI
+U937,School B,Female,S5,3,English,16.5,38.5,100.0,Pass,-3.0,UCI
+U938,School B,Female,S4,3,English,15.0,42.0,98.0,Pass,1.5,UCI
+U939,School B,Male,S5,3,English,13.5,28.0,96.0,Fail,0.0,UCI
+U940,School B,Male,S5,3,English,18.0,42.0,96.0,Pass,-1.5,UCI
+U941,School B,Male,S5,3,English,12.0,28.0,84.0,Fail,1.5,UCI
+U942,School B,Female,S5,3,English,19.5,56.0,100.0,Pass,3.0,UCI
+U943,School B,Male,S4,3,English,15.0,38.5,100.0,Pass,1.5,UCI
+U944,School B,Female,S5,3,English,16.5,38.5,96.0,Pass,-1.5,UCI
+U945,School B,Female,S5,3,English,25.5,63.0,100.0,Pass,1.5,UCI
+U946,School B,Male,S4,3,English,18.0,45.5,100.0,Pass,1.5,UCI
+U947,School B,Male,S5,3,English,19.5,45.5,100.0,Pass,1.5,UCI
+U948,School B,Male,S6,3,English,13.5,35.0,96.0,Pass,0.0,UCI
+U949,School B,Male,S5,3,English,16.5,42.0,92.0,Pass,0.0,UCI
+U950,School B,Female,S5,3,English,15.0,35.0,94.0,Pass,1.5,UCI
+U951,School B,Female,S4,3,English,19.5,45.5,90.0,Pass,1.5,UCI
+U952,School B,Male,S4,3,English,13.5,38.5,92.0,Pass,1.5,UCI
+U953,School B,Female,S5,3,English,10.5,35.0,96.0,Pass,3.0,UCI
+U954,School B,Male,S5,3,English,12.0,35.0,100.0,Pass,7.5,UCI
+U955,School B,Male,S6,3,English,18.0,45.5,100.0,Pass,0.0,UCI
+U956,School B,Male,S5,3,English,15.0,35.0,100.0,Pass,-1.5,UCI
+U957,School B,Male,S6,3,English,15.0,35.0,88.0,Pass,-1.5,UCI
+U958,School B,Female,S4,3,English,16.5,42.0,100.0,Pass,3.0,UCI
+U959,School B,Male,S5,3,English,10.5,0.0,100.0,Fail,-10.5,UCI
+U960,School B,Male,S4,3,English,16.5,35.0,96.0,Pass,-3.0,UCI
+U961,School B,Male,S4,3,English,15.0,31.5,100.0,Fail,0.0,UCI
+U962,School B,Male,S6,3,English,13.5,31.5,96.0,Fail,-3.0,UCI
+U963,School B,Male,S6,3,English,6.0,0.0,100.0,Fail,-6.0,UCI
+U964,School B,Male,S6,3,English,9.0,31.5,92.0,Fail,7.5,UCI
+U965,School B,Male,S6,3,English,6.0,28.0,82.0,Fail,6.0,UCI
+U966,School B,Male,S4,3,English,10.5,28.0,88.0,Fail,1.5,UCI
+U967,School B,Male,S6,3,English,12.0,31.5,92.0,Fail,1.5,UCI
+U968,School B,Female,S4,3,English,7.5,24.5,84.0,Fail,0.0,UCI
+U969,School B,Female,S5,3,English,10.5,35.0,82.0,Pass,3.0,UCI
+U970,School B,Male,S6,3,English,12.0,35.0,76.0,Pass,4.5,UCI
+U971,School B,Female,S6,3,English,15.0,35.0,84.0,Pass,1.5,UCI
+U972,School B,Male,S6,3,English,13.5,38.5,84.0,Pass,1.5,UCI
+U973,School B,Male,S6,3,English,15.0,38.5,84.0,Pass,-1.5,UCI
+U974,School B,Male,S5,3,English,12.0,35.0,92.0,Pass,1.5,UCI
+U975,School B,Male,S6,3,English,13.5,31.5,100.0,Fail,1.5,UCI
+U976,School B,Male,S6,3,English,12.0,35.0,92.0,Pass,1.5,UCI
+U977,School B,Female,S6,3,English,9.0,28.0,96.0,Fail,3.0,UCI
+U978,School B,Female,S6,3,English,9.0,24.5,100.0,Fail,3.0,UCI
+U979,School B,Female,S6,3,English,12.0,0.0,100.0,Fail,-3.0,UCI
+U980,School B,Female,S5,3,English,15.0,38.5,100.0,Pass,1.5,UCI
+U981,School B,Female,S5,3,English,12.0,28.0,90.0,Fail,-1.5,UCI
+U982,School B,Female,S5,3,English,12.0,0.0,100.0,Fail,0.0,UCI
+U983,School B,Female,S6,3,English,10.5,28.0,94.0,Fail,-1.5,UCI
+U984,School B,Female,S5,3,English,12.0,31.5,100.0,Fail,3.0,UCI
+U985,School B,Female,S5,3,English,10.5,35.0,100.0,Pass,4.5,UCI
+U986,School B,Female,S6,3,English,10.5,24.5,94.0,Fail,1.5,UCI
+U987,School B,Female,S6,3,English,18.0,49.0,96.0,Pass,1.5,UCI
+U988,School B,Female,S5,3,English,16.5,45.5,100.0,Pass,1.5,UCI
+U989,School B,Female,S6,3,English,18.0,49.0,100.0,Pass,1.5,UCI
+U990,School B,Female,S6,3,English,27.0,63.0,100.0,Pass,0.0,UCI
+U991,School B,Male,S6,3,English,25.5,59.5,94.0,Pass,0.0,UCI
+U992,School B,Female,S5,3,English,25.5,63.0,100.0,Pass,1.5,UCI
+U993,School B,Female,S6,3,English,13.5,0.0,100.0,Fail,-13.5,UCI
+U994,School B,Male,S6,3,English,15.0,38.5,84.0,Pass,1.5,UCI
+U995,School B,Male,S6,3,English,18.0,49.0,90.0,Pass,1.5,UCI
+U996,School B,Male,S5,3,English,18.0,49.0,92.0,Pass,1.5,UCI
+U997,School B,Female,S6,3,English,12.0,35.0,92.0,Pass,0.0,UCI
+U998,School B,Female,S6,3,English,16.5,45.5,100.0,Pass,1.5,UCI
+U999,School B,Female,S6,3,English,7.5,0.0,100.0,Fail,-7.5,UCI
+U1000,School B,Female,S6,3,English,13.5,35.0,96.0,Pass,1.5,UCI
+U1001,School B,Female,S6,3,English,7.5,0.0,100.0,Fail,-7.5,UCI
+U1002,School B,Female,S5,3,English,27.0,63.0,100.0,Pass,0.0,UCI
+U1003,School B,Female,S5,3,English,16.5,42.0,90.0,Pass,0.0,UCI
+U1004,School B,Female,S6,3,English,12.0,38.5,96.0,Pass,3.0,UCI
+U1005,School B,Female,S6,3,English,16.5,42.0,100.0,Pass,0.0,UCI
+U1006,School B,Female,S6,3,English,12.0,0.0,100.0,Fail,-12.0,UCI
+U1007,School B,Female,S6,3,English,21.0,52.5,90.0,Pass,0.0,UCI
+U1008,School B,Male,S5,3,English,15.0,38.5,92.0,Pass,1.5,UCI
+U1009,School B,Female,S6,3,English,15.0,35.0,100.0,Pass,0.0,UCI
+U1010,School B,Female,S5,3,English,18.0,42.0,96.0,Pass,0.0,UCI
+U1011,School B,Female,S5,3,English,22.5,52.5,100.0,Pass,-1.5,UCI
+U1012,School B,Male,S6,3,English,21.0,49.0,96.0,Pass,-1.5,UCI
+U1013,School B,Female,S6,3,English,28.5,63.0,100.0,Pass,-3.0,UCI
+U1014,School B,Female,S6,3,English,24.0,52.5,100.0,Pass,-1.5,UCI
+U1015,School B,Female,S6,3,English,19.5,45.5,88.0,Pass,-1.5,UCI
+U1016,School B,Female,S5,3,English,22.5,52.5,92.0,Pass,-1.5,UCI
+U1017,School B,Female,S5,3,English,19.5,45.5,100.0,Pass,0.0,UCI
+U1018,School B,Male,S6,3,English,12.0,31.5,100.0,Fail,3.0,UCI
+U1019,School B,Male,S6,3,English,22.5,56.0,100.0,Pass,1.5,UCI
+U1020,School B,Female,S5,3,English,12.0,31.5,100.0,Fail,0.0,UCI
+U1021,School B,Female,S6,3,English,15.0,35.0,100.0,Pass,0.0,UCI
+U1022,School B,Female,S6,3,English,10.5,0.0,100.0,Fail,-3.0,UCI
+U1023,School B,Male,S6,3,English,13.5,35.0,94.0,Pass,1.5,UCI
+U1024,School B,Female,S5,3,English,15.0,42.0,84.0,Pass,1.5,UCI
+U1025,School B,Female,S5,3,English,10.5,31.5,92.0,Fail,1.5,UCI
+U1026,School B,Female,S6,3,English,22.5,59.5,100.0,Pass,3.0,UCI
+U1027,School B,Female,S6,3,English,15.0,42.0,92.0,Pass,1.5,UCI
+U1028,School B,Female,S6,3,English,10.5,31.5,92.0,Fail,1.5,UCI
+U1029,School B,Female,S6,3,English,19.5,49.0,98.0,Pass,1.5,UCI
+U1030,School B,Female,S6,3,English,24.0,56.0,98.0,Pass,0.0,UCI
+U1031,School B,Female,S5,3,English,12.0,31.5,80.0,Fail,1.5,UCI
+U1032,School B,Male,S6,3,English,25.5,66.5,92.0,Pass,1.5,UCI
+U1033,School B,Male,S6,3,English,10.5,0.0,100.0,Fail,0.0,UCI
+U1034,School B,Male,S5,3,English,21.0,56.0,92.0,Pass,1.5,UCI
+U1035,School B,Male,S6,3,English,7.5,0.0,100.0,Fail,4.5,UCI
+U1036,School B,Male,S6,3,English,10.5,0.0,100.0,Fail,0.0,UCI
+U1037,School B,Female,S6,3,English,21.0,52.5,100.0,Pass,4.5,UCI
+U1038,School B,Female,S5,3,English,9.0,38.5,100.0,Pass,4.5,UCI
+U1039,School B,Female,S6,3,English,10.5,35.0,92.0,Pass,3.0,UCI
+U1040,School B,Female,S6,3,English,15.0,35.0,92.0,Pass,1.5,UCI
+U1041,School B,Female,S6,3,English,22.5,56.0,92.0,Pass,0.0,UCI
+U1042,School B,Female,S6,3,English,16.5,31.5,88.0,Fail,1.5,UCI
+U1043,School B,Male,S5,3,English,15.0,35.0,88.0,Pass,0.0,UCI
+U1044,School B,Male,S6,3,English,15.0,38.5,92.0,Pass,1.5,UCI

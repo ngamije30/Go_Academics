@@ -1,16 +1,21 @@
 {
   "School": {
-    "School A": 0
+    "School A": 0,
+    "School B": 1
   },
   "Gender": {
     "Female": 0,
     "Male": 1
   },
   "Stream": {
-    "Grade 10": 0
+    "Grade 10": 0,
+    "S4": 1,
+    "S5": 2,
+    "S6": 3
   },
   "Subject": {
     "English": 0,
-    "French": 1
+    "French": 1,
+    "Mathematics": 2
   }
 }

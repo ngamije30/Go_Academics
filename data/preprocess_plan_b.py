@@ -24,16 +24,10 @@ RAW_DIR = Path(__file__).parent / "raw"
 OUT_DIR = Path(__file__).parent / "processed"
 OUT_DIR.mkdir(exist_ok=True)
 
-# ── 1. Load both CSVs ─────────────────────────────────────────────────────────
+FEATURE_COLS = ["School", "Gender", "Stream", "Term",
+                "Subject", "CA_Score", "CA_Trend", "Attendance_Pct"]
 
-mat = pd.read_csv(RAW_DIR / "student-mat.csv", sep=";")
-por = pd.read_csv(RAW_DIR / "student-por.csv", sep=";")
-mat["Subject"] = "Mathematics"
-por["Subject"] = "English"
-raw = pd.concat([mat, por], ignore_index=True)
-print(f"Loaded {len(mat)} Math + {len(por)} English = {len(raw)} total rows")
-
-# ── 2. Column mapping functions ───────────────────────────────────────────────
+# ── Column mapping functions ────────────────────────────────────────────────
 
 def map_school(s):    return "School A" if s == "GP" else "School B"
 def map_gender(s):    return "Female" if s == "F" else "Male"
@@ -54,60 +48,78 @@ def scale_exam(g3):
 def pass_fail(g3):
     return "Pass" if g3 >= 10 else "Fail"
 
-# ── 3. Build feature table ────────────────────────────────────────────────────
 
-terms = ([1] * (len(raw) // 3 + 1) +
-         [2] * (len(raw) // 3 + 1) +
-         [3] * (len(raw) // 3 + 1))[:len(raw)]
+def build_dataframe() -> pd.DataFrame:
+    """Load both UCI CSVs and return the Go-Academics-schema dataframe
+    (pre-encoding, pre-SMOTE). Exposed as a function so that
+    data/preprocess_merge.py can import this exact dataframe when combining
+    with the Excella (Plan A) pipeline, without duplicating the remapping logic.
+    """
+    # ── 1. Load both CSVs ────────────────────────────────────────────────────
+    mat = pd.read_csv(RAW_DIR / "student-mat.csv", sep=";")
+    por = pd.read_csv(RAW_DIR / "student-por.csv", sep=";")
+    mat["Subject"] = "Mathematics"
+    por["Subject"] = "English"
+    raw = pd.concat([mat, por], ignore_index=True)
+    print(f"Loaded {len(mat)} Math + {len(por)} English = {len(raw)} total rows")
 
-df = pd.DataFrame()
-df["StudentID"]      = [f"S{str(i+1).zfill(3)}" for i in range(len(raw))]
-df["School"]         = raw["school"].apply(map_school)
-df["Gender"]         = raw["sex"].apply(map_gender)
-df["Stream"]         = raw["age"].apply(map_stream)
-df["Term"]           = terms
-df["Subject"]        = raw["Subject"]
-df["CA_Score"]       = raw["G1"].apply(scale_ca)          # first CA (/30)
-df["CA_Trend"]       = (raw["G2"] - raw["G1"]).apply(     # change G1→G2, scaled to /30
-                           lambda d: round((d / 20) * 30, 1))
-df["Exam_Score"]     = raw["G3"].apply(scale_exam)
-df["Attendance_Pct"] = raw["absences"].apply(calc_attendance)
-df["Final_Result"]   = raw["G3"].apply(pass_fail)
+    # ── 2. Build feature table ───────────────────────────────────────────────
+    terms = ([1] * (len(raw) // 3 + 1) +
+             [2] * (len(raw) // 3 + 1) +
+             [3] * (len(raw) // 3 + 1))[:len(raw)]
 
-print(f"\nClass distribution:\n{df['Final_Result'].value_counts()}")
-print(f"Pass rate: {(df['Final_Result']=='Pass').mean()*100:.1f}%")
-print(f"\nCA_Trend stats (negative = declining, positive = improving):")
-print(df["CA_Trend"].describe().round(2))
+    df = pd.DataFrame()
+    df["StudentID"]      = [f"S{str(i+1).zfill(3)}" for i in range(len(raw))]
+    df["School"]         = raw["school"].apply(map_school)
+    df["Gender"]         = raw["sex"].apply(map_gender)
+    df["Stream"]         = raw["age"].apply(map_stream)
+    df["Term"]           = terms
+    df["Subject"]        = raw["Subject"]
+    df["CA_Score"]       = raw["G1"].apply(scale_ca)          # first CA (/30)
+    df["CA_Trend"]       = (raw["G2"] - raw["G1"]).apply(     # change G1→G2, scaled to /30
+                               lambda d: round((d / 20) * 30, 1))
+    df["Exam_Score"]     = raw["G3"].apply(scale_exam)
+    df["Attendance_Pct"] = raw["absences"].apply(calc_attendance)
+    df["Final_Result"]   = raw["G3"].apply(pass_fail)
 
-df.to_csv(OUT_DIR / "students.csv", index=False)
-print(f"\nSaved {len(df)} rows to data/processed/students.csv")
+    print(f"\nClass distribution:\n{df['Final_Result'].value_counts()}")
+    print(f"Pass rate: {(df['Final_Result']=='Pass').mean()*100:.1f}%")
+    print(f"\nCA_Trend stats (negative = declining, positive = improving):")
+    print(df["CA_Trend"].describe().round(2))
+    return df
 
-# ── 4. Encode for ML training ─────────────────────────────────────────────────
 
-ml = df.copy()
+def main():
+    df = build_dataframe()
+    df.to_csv(OUT_DIR / "students.csv", index=False)
+    print(f"\nSaved {len(df)} rows to data/processed/students.csv")
 
-cat_cols = ["School", "Gender", "Stream", "Subject"]
-for col in cat_cols:
-    le = LabelEncoder()
-    ml[col] = le.fit_transform(ml[col])
+    # ── Encode for ML training ───────────────────────────────────────────────
+    ml = df.copy()
 
-ml["Final_Result"] = (ml["Final_Result"] == "Pass").astype(int)
+    cat_cols = ["School", "Gender", "Stream", "Subject"]
+    for col in cat_cols:
+        le = LabelEncoder()
+        ml[col] = le.fit_transform(ml[col])
 
-# CA_Trend replaces Exam_Score (which leaks from G3, the same source as Final_Result)
-FEATURE_COLS = ["School", "Gender", "Stream", "Term",
-                "Subject", "CA_Score", "CA_Trend", "Attendance_Pct"]
-X = ml[FEATURE_COLS]
-y = ml["Final_Result"]
+    ml["Final_Result"] = (ml["Final_Result"] == "Pass").astype(int)
 
-# ── 5. Apply SMOTE to balance classes ─────────────────────────────────────────
+    # CA_Trend replaces Exam_Score (which leaks from G3, the same source as Final_Result)
+    X = ml[FEATURE_COLS]
+    y = ml["Final_Result"]
 
-print(f"\nBefore SMOTE - Pass: {y.sum()} | Fail: {(y==0).sum()}")
-smote = SMOTE(random_state=42)
-X_bal, y_bal = smote.fit_resample(X, y)
-print(f"After  SMOTE - Pass: {y_bal.sum()} | Fail: {(y_bal==0).sum()}")
+    # ── Apply SMOTE to balance classes ───────────────────────────────────────
+    print(f"\nBefore SMOTE - Pass: {y.sum()} | Fail: {(y==0).sum()}")
+    smote = SMOTE(random_state=42)
+    X_bal, y_bal = smote.fit_resample(X, y)
+    print(f"After  SMOTE - Pass: {y_bal.sum()} | Fail: {(y_bal==0).sum()}")
 
-ml_balanced = pd.DataFrame(X_bal, columns=FEATURE_COLS)
-ml_balanced["Final_Result"] = y_bal
-ml_balanced.to_csv(OUT_DIR / "students_ml.csv", index=False)
-print(f"\nSaved {len(ml_balanced)} rows to data/processed/students_ml.csv")
-print("Preprocessing complete.")
+    ml_balanced = pd.DataFrame(X_bal, columns=FEATURE_COLS)
+    ml_balanced["Final_Result"] = y_bal
+    ml_balanced.to_csv(OUT_DIR / "students_ml.csv", index=False)
+    print(f"\nSaved {len(ml_balanced)} rows to data/processed/students_ml.csv")
+    print("Preprocessing complete.")
+
+
+if __name__ == "__main__":
+    main()

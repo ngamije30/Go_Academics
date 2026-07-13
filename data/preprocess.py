@@ -36,82 +36,95 @@ SCHOOL_CODES = {
     "Excella Secondary School Rwanda": "School A",
 }
 
-# ── 1. Load every real term file ────────────────────────────────────────────
-
-RAW_FILES = sorted(RAW_DIR.glob("*_term*.csv"))
-if not RAW_FILES:
-    raise FileNotFoundError(f"No real school term files found in {RAW_DIR}")
-
-frames = [pd.read_csv(f) for f in RAW_FILES]
-raw = pd.concat(frames, ignore_index=True)
-print(f"Loaded {len(raw)} rows from {len(RAW_FILES)} file(s): "
-      f"{[f.name for f in RAW_FILES]}")
-
-# ── 2. Anonymize school name ────────────────────────────────────────────────
-
-unknown = set(raw["School"]) - set(SCHOOL_CODES)
-if unknown:
-    raise ValueError(
-        f"Unmapped school name(s) {unknown} — add them to SCHOOL_CODES in "
-        f"data/preprocess.py before preprocessing."
-    )
-
-df = raw.copy()
-df["School"] = df["School"].map(SCHOOL_CODES)
-
-# ── 3. Derive CA_Trend (change vs. this student's previous term, same subject) ──
-# First-term rows have no prior CA score, so trend is 0 (neutral) until a
-# second term is collected for that student/subject.
-
-df = df.sort_values(["StudentID", "Subject", "Term"]).reset_index(drop=True)
-df["CA_Trend"] = (
-    df.groupby(["StudentID", "Subject"])["CA_Score"]
-    .diff()
-    .fillna(0.0)
-    .round(1)
-)
-
-print(f"\nClass distribution:\n{df['Final_Result'].value_counts()}")
-print(f"Pass rate: {(df['Final_Result']=='Pass').mean()*100:.1f}%")
-print(f"\nSubjects present: {sorted(df['Subject'].unique())}")
-print(f"Streams present:  {sorted(df['Stream'].unique())}")
-print(f"Terms present:    {sorted(df['Term'].unique())}")
-
-df.to_csv(OUT_DIR / "students.csv", index=False)
-print(f"\nSaved {len(df)} rows to data/processed/students.csv")
-
-# ── 4. Encode for ML training ───────────────────────────────────────────────
-
-ml = df.copy()
-
-cat_cols = ["School", "Gender", "Stream", "Subject"]
-encodings = {}
-for col in cat_cols:
-    le = LabelEncoder()
-    ml[col] = le.fit_transform(ml[col])
-    encodings[col] = {cls: int(idx) for idx, cls in enumerate(le.classes_)}
-
-ml["Final_Result"] = (ml["Final_Result"] == "Pass").astype(int)
-
 FEATURE_COLS = ["School", "Gender", "Stream", "Term",
                 "Subject", "CA_Score", "CA_Trend", "Attendance_Pct"]
-X = ml[FEATURE_COLS]
-y = ml["Final_Result"]
 
-with open(OUT_DIR / "encodings.json", "w") as f:
-    json.dump(encodings, f, indent=2)
-print("Saved category encodings to data/processed/encodings.json")
 
-# ── 5. Apply SMOTE to balance classes ───────────────────────────────────────
+def build_dataframe() -> pd.DataFrame:
+    """Load every real term file and return the anonymized, human-readable
+    dataframe (school name mapped, CA_Trend derived) — pre-encoding, pre-SMOTE.
 
-print(f"\nBefore SMOTE - Pass: {y.sum()} | Fail: {(y==0).sum()}")
-minority_count = y.value_counts().min()
-smote = SMOTE(random_state=42, k_neighbors=min(5, minority_count - 1))
-X_bal, y_bal = smote.fit_resample(X, y)
-print(f"After  SMOTE - Pass: {y_bal.sum()} | Fail: {(y_bal==0).sum()}")
+    Exposed as a function (rather than only a top-level script) so that
+    data/preprocess_merge.py can import this exact dataframe when combining
+    with the UCI Plan B pipeline, without duplicating the anonymization logic.
+    """
+    # ── 1. Load every real term file ────────────────────────────────────────
+    raw_files = sorted(RAW_DIR.glob("*_term*.csv"))
+    if not raw_files:
+        raise FileNotFoundError(f"No real school term files found in {RAW_DIR}")
 
-ml_balanced = pd.DataFrame(X_bal, columns=FEATURE_COLS)
-ml_balanced["Final_Result"] = y_bal
-ml_balanced.to_csv(OUT_DIR / "students_ml.csv", index=False)
-print(f"\nSaved {len(ml_balanced)} rows to data/processed/students_ml.csv")
-print("Preprocessing complete.")
+    frames = [pd.read_csv(f) for f in raw_files]
+    raw = pd.concat(frames, ignore_index=True)
+    print(f"Loaded {len(raw)} rows from {len(raw_files)} file(s): "
+          f"{[f.name for f in raw_files]}")
+
+    # ── 2. Anonymize school name ────────────────────────────────────────────
+    unknown = set(raw["School"]) - set(SCHOOL_CODES)
+    if unknown:
+        raise ValueError(
+            f"Unmapped school name(s) {unknown} — add them to SCHOOL_CODES in "
+            f"data/preprocess.py before preprocessing."
+        )
+
+    df = raw.copy()
+    df["School"] = df["School"].map(SCHOOL_CODES)
+
+    # ── 3. Derive CA_Trend (change vs. this student's previous term, same subject) ──
+    # First-term rows have no prior CA score, so trend is 0 (neutral) until a
+    # second term is collected for that student/subject.
+    df = df.sort_values(["StudentID", "Subject", "Term"]).reset_index(drop=True)
+    df["CA_Trend"] = (
+        df.groupby(["StudentID", "Subject"])["CA_Score"]
+        .diff()
+        .fillna(0.0)
+        .round(1)
+    )
+
+    print(f"\nClass distribution:\n{df['Final_Result'].value_counts()}")
+    print(f"Pass rate: {(df['Final_Result']=='Pass').mean()*100:.1f}%")
+    print(f"\nSubjects present: {sorted(df['Subject'].unique())}")
+    print(f"Streams present:  {sorted(df['Stream'].unique())}")
+    print(f"Terms present:    {sorted(df['Term'].unique())}")
+    return df
+
+
+def main():
+    df = build_dataframe()
+    df.to_csv(OUT_DIR / "students.csv", index=False)
+    print(f"\nSaved {len(df)} rows to data/processed/students.csv")
+
+    # ── 4. Encode for ML training ───────────────────────────────────────────
+    ml = df.copy()
+
+    cat_cols = ["School", "Gender", "Stream", "Subject"]
+    encodings = {}
+    for col in cat_cols:
+        le = LabelEncoder()
+        ml[col] = le.fit_transform(ml[col])
+        encodings[col] = {cls: int(idx) for idx, cls in enumerate(le.classes_)}
+
+    ml["Final_Result"] = (ml["Final_Result"] == "Pass").astype(int)
+
+    X = ml[FEATURE_COLS]
+    y = ml["Final_Result"]
+
+    with open(OUT_DIR / "encodings.json", "w") as f:
+        json.dump(encodings, f, indent=2)
+    print("Saved category encodings to data/processed/encodings.json")
+
+    # ── 5. Apply SMOTE to balance classes ───────────────────────────────────
+    print(f"\nBefore SMOTE - Pass: {y.sum()} | Fail: {(y==0).sum()}")
+    minority_count = y.value_counts().min()
+    smote = SMOTE(random_state=42, k_neighbors=min(5, minority_count - 1))
+    X_bal, y_bal = smote.fit_resample(X, y)
+    print(f"After  SMOTE - Pass: {y_bal.sum()} | Fail: {(y_bal==0).sum()}")
+
+    ml_balanced = pd.DataFrame(X_bal, columns=FEATURE_COLS)
+    ml_balanced["Final_Result"] = y_bal
+    ml_balanced.to_csv(OUT_DIR / "students_ml.csv", index=False)
+    print(f"\nSaved {len(ml_balanced)} rows to data/processed/students_ml.csv")
+    print("Preprocessing complete.")
+
+
+if __name__ == "__main__":
+    main()

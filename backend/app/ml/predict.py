@@ -112,9 +112,22 @@ def _top_factors_shap(model, X_encoded: pd.DataFrame, features: dict) -> list[st
     import shap
     explainer  = shap.TreeExplainer(model)
     shap_vals  = explainer.shap_values(X_encoded)
-    # shap_vals shape: (1, n_features) — positive = increases P(Pass), so negate for risk
-    risk_shap  = -shap_vals[0]
-    top_idx    = np.argsort(np.abs(risk_shap))[::-1][:3]
+
+    # TreeExplainer's return shape varies by SHAP version and model type:
+    # older versions (and XGBoost) return a single ndarray (n_samples, n_features)
+    # for binary classification; newer versions return either a list of
+    # per-class arrays or one ndarray (n_samples, n_features, n_classes).
+    # Normalize to this row's shap values for the "Pass" class (index 1).
+    if isinstance(shap_vals, list):
+        pass_shap = shap_vals[1][0]
+    elif shap_vals.ndim == 3:
+        pass_shap = shap_vals[0, :, 1]
+    else:
+        pass_shap = shap_vals[0]
+
+    # positive shap value increases P(Pass), so negate for risk
+    risk_shap = -np.asarray(pass_shap, dtype=float)
+    top_idx   = np.argsort(np.abs(risk_shap))[::-1][:3]
     return [_human_factor(FEATURE_COLS[i], features[FEATURE_COLS[i]], risk_shap[i])
             for i in top_idx]
 
