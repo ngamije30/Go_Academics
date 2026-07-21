@@ -4,6 +4,7 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>Go Academics</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%231E3A5F'/%3E%3Cpath d='M21.42 10.92a1 1 0 0 0 0-1.84L12.83 5.18a2 2 0 0 0-1.66 0L2.58 9.08a1 1 0 0 0 0 1.84l8.59 3.9a2 2 0 0 0 1.66 0z' fill='none' stroke='%23F59E0B' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M22 10v6' fill='none' stroke='%23F59E0B' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M6 12.5V16a6 3 0 0 0 12 0v-3.5' fill='none' stroke='%23F59E0B' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"/>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -1044,7 +1045,11 @@ const API = '';
 let allStudents = [];
 let alertFilter = 'all';
 let currentTab  = 'attendance';
-const _submitTimes = {};  // student_code → timestamp of last submission
+const _submitTimes = JSON.parse(localStorage.getItem('submitTimes')||'{}');  // student_code → timestamp of last submission
+function markSubmitted(code) {
+  _submitTimes[code] = Date.now();
+  localStorage.setItem('submitTimes', JSON.stringify(_submitTimes));
+}
 
 // Display-only mapping: DB/model/CSV keep the anonymized code ("School A") —
 // this just renders the real name to the teacher in the UI. Never send the
@@ -1559,7 +1564,7 @@ function submitAttendance() {
   })
   .then(r=>{ if(!r.ok) return r.json().then(e=>{throw new Error(e.detail||'Server error');}); return r.json(); })
   .then(d=>{
-    _submitTimes[code] = Date.now();
+    markSubmitted(code);
     showSuccess('Attendance recorded — risk level: '+(d.risk_level||'assessed'));
     updateLiveWidget(d, code);
     return loadAll();
@@ -1593,7 +1598,7 @@ function submitAssessment() {
   })
   .then(r=>{ if(!r.ok) return r.json().then(e=>{throw new Error(e.detail||'Server error');}); return r.json(); })
   .then(d=>{
-    _submitTimes[code] = Date.now();
+    markSubmitted(code);
     showSuccess('Assessment recorded — risk level: '+(d.risk_level||'assessed')+' · score: '+(d.risk_score!=null?Math.round(d.risk_score*100)+'%':'N/A'));
     updateLiveWidget(d, code);
     return loadAll();
@@ -1693,12 +1698,16 @@ function renderAlerts() {
     return;
   }
   const alerts = buildAlerts(allStudents).filter(a=>alertFilter==='all'||a.level===alertFilter);
+  // Most recently submitted students float to the top so a fresh at-risk
+  // result is immediately visible as the latest notification.
+  alerts.sort((a,b) => (_submitTimes[b.code]||0) - (_submitTimes[a.code]||0));
   const el     = document.getElementById('alerts-list');
   if(!alerts.length) { el.innerHTML='<div class="empty-state">No alerts for this filter.</div>'; return; }
   const iconColor = {high:'#DC2626', medium:'#D97706', low:'#16A34A'};
   const badgeCls  = {high:'badge-high', medium:'badge-medium', low:'badge-low'};
   el.innerHTML = alerts.map((a)=>{
     const ts  = _submitTimes[a.code];
+    const isNew = ts && (Date.now()-ts) < 30*60*1000;
     const timeStr = ts ? relativeTime(ts) : 'loaded from database';
     return `
     <div class="alert-card ${a.level}">
@@ -1711,6 +1720,7 @@ function renderAlerts() {
         <div class="alert-title">
           ${a.title}
           <span class="badge ${badgeCls[a.level]||'badge-none'}" style="padding:2px 8px;font-size:10px">${a.level.toUpperCase()}</span>
+          ${isNew ? '<span style="background:var(--navy);color:#fff;border-radius:999px;padding:2px 8px;font-size:10px;font-weight:700">NEW</span>' : ''}
         </div>
         <div class="alert-student">${a.student}</div>
         <div class="alert-desc">${a.desc}</div>
